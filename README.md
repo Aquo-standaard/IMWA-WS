@@ -1,2 +1,1 @@
-# IMWA-WS
-Informatiemodel water tbv watersysteem
+# IMWA-kern
