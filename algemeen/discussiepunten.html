@@ -1,0 +1,31 @@
+		<h2>Openstaande discussiepunten</h2>
+		<ul>
+			<li><strong>1. Issue: </strong>Welke (specifieke) attributen kunnen/moeten we opnemen voor: Stormvloedkering, Voorde, Zandvang, Overkluizing en Tunnel?</li>
+			<li><strong>2. Issue: </strong>Vuilvang opnemen als waterstaatkundig kunstwerk, waterstaatkundige constructie of kunstwerkelement (want vaak onderdeel van een kunstwerk)?</li>
+			<li><strong>3. Issue: </strong>Zijn alle relevante functies voor kunstwerken/kunstwerkelementen en constructies/constructie-elementen opgenomen?</li>
+			<li><strong>4. Issue: </strong>Wat is de functie (toepassing/uitwisseldoel) van het attribuut leggerStatus? Welke domeinwaarden moeten we hanteren en welke betekenis hebben deze?</li>
+			<li><strong>5. Issue: </strong>Willen we een attribuut opnemen bij Doorstroomopening voor de volgorde, in het geval van meerdere doorstroomopeningen (bv. middels een nummering)? Zo ja, hoe komt deze er dan uit te zien? Zou eventueel ook via een ruimtelijke relatie kunnen (aangezien Doorstroomopening een geo-object is met optioneel geometrie)?</li>
+			<li><strong>6. Issue: </strong>Is het wenselijk om, in het geval van meerdere doorstroomopeningen uit te wisselen welke de 'hoofdopening' is?</li>
+			<li><strong>7. Issue: </strong>Is het wenselijk om het type materiaal uit te wisselen van een Drainagebuis, Sifon, Hevel of Duiker (via attributen ‘typeBuisMateriaal’  en/of ‘typeKokerMateriaal’)?</li>
+			<li><strong>8. Issue: </strong>Is het wenselijk om attributen op te nemen voor typeOvergangsconstructie en typeTeenconstructie? Beide zijn gelinkt aan domeintabel ‘OvergangsconstructieType’ maar de waarden daarin zijn op dit moment beperkt tot "teenschot" en "opsluitband"?</li>
+			<li><strong>9. Issue: </strong>Wat is de functie/bedoeling van het attribuut "erosieBestendigheid" (bij Afdekmateriaal)? Deze heeft als domeintabel "Staat" (met daarin als waarden goed, matig, slecht, onbekend’). Is dit bedoeld als een fysieke eigenschap of is dit een beoordeling (zou in dat geval een waardebepalingsmethode moeten hebben en thuishoren bij "Observaties")?</li>
+			<li><strong>10. Issue: </strong>Is het wenselijk om i.p.v. typeOvergangsconstructie en typeTeenconstructie het type materiaal bij deze constructies op te nemen?</li>
+			<li><strong>11. Issue: </strong>Kunstwerk als specialisatie van Waterstaatswerk</li>
+			<li><strong>12. Issue: </strong>In NEN 3610:2022 wordt op hoofdlijnen onderscheid gemaakt in re&amp;#235;le (fysieke) geo-objecten enerzijds en virtuele geo-objecten (zoals functionele ruimten) anderzijds. NEN 3610:2022 heeft geen relaties uitgewerkt tussen re&amp;#235;le objecten / virtuele ruimten, maar gesteld is dat dit in sectormodellen uitgewerkt kan/moet worden.
+
+Uit de definitie van “kunstwerk” (civieltechnisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen) kan worden geconcludeerd dat kunstwerken bestaan voor de infrastructuur van o.a. water en waterkeringen. Je zou daarmee kunnen zeggen dat kunstwerken altijd ‘een onderdeel’ zijn van genoemde infrastructuur, zoals oppervlaktewateren en keringen (bv. dijken).</li>
+			<li><strong>13. Issue: </strong>Aannames:
+
+“Kunstwerk” is een re&amp;#235;el object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
+
+“Kunstwerk” is altijd een onderdeel van een infrastructuur voor wegen, water, spoorbanen, waterkeringen en/of leidingen. Een sluis kan bijvoorbeeld een onderdeel zijn van zowel een oppervlaktewater (bv. kanaal) als een waterkering (bv. dijk).
+
+Een “Kunstwerk” kan onderdeel zijn van een “Kunstwerkcomplex”. Een “Kunstwerkcomplex” kan als een functionele ruimte worden beschouwd. “Kunstwerk” is een re&amp;#235;el object en kan daarmee niet ook een virtueel object (functionele ruimte) zijn.
+
+“Kunstwerk” is altijd een onderdeel van een infrastructuur voor wegen, water, spoorbanen, waterkeringen en/of leidingen. Een sluis kan bijvoorbeeld een onderdeel zijn van zowel een oppervlaktewater (bv. kanaal) als een waterkering (bv. dijk).
+
+Een “Kunstwerk” kan onderdeel zijn van een “Kunstwerkcomplex”. Een “Kunstwerkcomplex” kan als een functionele ruimte worden beschouwd.</li>
+			<li><strong>14. Issue: </strong>Voorstel besluit
+Voorgesteld wordt om de relatie (generalisatie) tussen “Kunstwerk” en “Waterstaatswerk” (de ‘route’ naar de virtuele ruimte in NEN 3610) in IMWA te verwijderen. De relatie tussen “Kunstwerk” en “Kunstwerkcomplex” blijft gehandhaafd. Via “Kunstwerkcomplex” kunnen ruimten waarin meerdere kunstwerken voorkomen geografisch worden afgebakend/gevisualiseerd (als functionele ruimte).</li>
+			<li><strong>15. Issue: </strong>Kunstwerken zijn onder NEN 3610 gemodelleerd als “constructie” (re&amp;#235;el object). Dit hebben we in IMWA overgenomen. Binnen het huidige IMWA is Kunstwerk (ook) een specialisatie van “Waterstaatswerk” en sluit aan daarmee aan op NEN 3610 via “Functionele ruimte” en/of “Juridische ruimte”. Daarmee is in IMWA een “Kunstwerk” een specialisatie van zowel een re&amp;#235;el object als een functionele ruimte (virtuele ruimte). De vraag is of dat juist/wenselijk is.</li>
+		</ul>
