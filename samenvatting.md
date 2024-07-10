@@ -1,0 +1,1 @@
+Dit document geeft een beschrijving van het domein Watersysteem binnen het Informatiemodel Water (IMWA). 
