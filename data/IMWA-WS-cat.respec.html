@@ -5,7 +5,7 @@
                     var respecConfig = {
                         specStatus: "ED",
                         editors: [{
-                            name: "WijnandVanRielIHW, IHW",
+                            name: "EmmelyKoornstra, IHW",
                             url: "http://your.site/",
                         }],
                         edDraftURI: "http://some.place",
@@ -32,13 +32,13 @@
       </section>
       <section id="sotd">
          <p>
-            Deze documentatie van het conceptueel model is laatst bijgewerkt op July 31, 2024 at 10:48:17.
+            Deze documentatie van het conceptueel model is laatst bijgewerkt op July 31, 2024 at 13:03:54.
             </p>
       </section>
       <section id="cat" class="normative">
          <h2>Gegevensdefinitie</h2>
          <p><b>Deze tekst is normatief.</b>
-            <!--CONCEPTUAL-IMWA2024Watersysteem-22.1-1-20231026-20240731-104746 imvertor Nightly-build.18--></p>
+            <!--CONCEPTUAL-IMWA2024Watersysteem-22.1-1-20231026-20240731-130322 imvertor Nightly-build.18--></p>
          <section id="global_package_Beleid">
             <h3>Domein   Beleid</h3>
             <section>
@@ -231,6 +231,26 @@
                         </tr>
                         <tr>
                            <td>
+                              aquifer­Type
+                              </td>
+                           <td>specificeert het type aquifer van een Kaderrichtlijn Water grondwaterlichaam</td>
+                           <td>
+                              GWLAquifer­Type
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              gelaagd
+                              </td>
+                           <td>specificeert of een Kaderrichtlijn Water grondwaterlichaam gelaagd is</td>
+                           <td>
+                              J_of_N
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               geometrie
                               </td>
                            <td>specificeert de geometrie van een Kaderrichtlijn Water grondwaterlichaam in een vlak</td>
@@ -247,26 +267,6 @@
                               </td>
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              gelaagd
-                              </td>
-                           <td>specificeert of een Kaderrichtlijn Water grondwaterlichaam gelaagd is</td>
-                           <td>
-                              J_of_N
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              aquifer­Type
-                              </td>
-                           <td>specificeert het type aquifer van een Kaderrichtlijn Water grondwaterlichaam</td>
-                           <td>
-                              GWLAquifer­Type
                               </td>
                            <td>1</td>
                         </tr>
@@ -292,9 +292,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              oppervlakte
+                              dikte­Gemiddeld
                               </td>
-                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
                            <td>
                               Measure
                               </td>
@@ -313,22 +313,22 @@
                         </tr>
                         <tr>
                            <td>- 
-                              dikte­Gemiddeld
-                              </td>
-                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               laagste­Punt
                               </td>
                            <td>specificeert het laagste punt van een grondwaterlichaam ten opzichte van een verticale
                               referentie</td>
                            <td>
                               <a class="link" href="#global_class_JuridischOmgevingswet_VerticaleReferentieDiepte">Verticale­Referentie­Diepte</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              oppervlakte
+                              </td>
+                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>
+                              Measure
                               </td>
                            <td>1</td>
                         </tr>
@@ -431,21 +431,21 @@
                         </tr>
                         <tr>
                            <td>
-                              KRWSleutelmaatregel­Type
-                              </td>
-                           <td>specificeert het type Kaderrichtlijn Water sleutelmaatregel</td>
-                           <td>
-                              KRWSleutelmaatregel­Type
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               KRWMaatregel­Type
                               </td>
                            <td>specificeert het type Kaderrichtlijn Water maatregel</td>
                            <td>
                               KRWMaatregel­Type
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              KRWSleutelmaatregel­Type
+                              </td>
+                           <td>specificeert het type Kaderrichtlijn Water sleutelmaatregel</td>
+                           <td>
+                              KRWSleutelmaatregel­Type
                               </td>
                            <td>1</td>
                         </tr>
@@ -623,28 +623,6 @@
                         </tr>
                         <tr>
                            <td>
-                              karakterschets
-                              </td>
-                           <td>geeft een samenvattende beschrijving van de kenmerkende eigenschappen van een Kaderrichtlijn
-                              Water waterlichaam</td>
-                           <td>
-                              CHARACTERSTRING
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              onttrekking­Voor­Menselijke­Consumptie­JN
-                              </td>
-                           <td>specificeert of een Kaderrichtlijn Water waterlichaam is aangewezen als object om
-                              water te ontrekken voor menselijke consumptie</td>
-                           <td>
-                              J_of_N
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               code
                               </td>
                            <td>specificeert de code van een Kaderrichtlijn Water waterlichaam</td>
@@ -655,11 +633,12 @@
                         </tr>
                         <tr>
                            <td>
-                              type­KRWWaterlichaam­Wijziging
+                              karakterschets
                               </td>
-                           <td>specificeert welk type wijziging is aangebracht aan een Kaderrichtlijn Water waterlichaam</td>
+                           <td>geeft een samenvattende beschrijving van de kenmerkende eigenschappen van een Kaderrichtlijn
+                              Water waterlichaam</td>
                            <td>
-                              KRWWaterlichaam­Wijziging­Type
+                              CHARACTERSTRING
                               </td>
                            <td>1</td>
                         </tr>
@@ -686,21 +665,32 @@
                         </tr>
                         <tr>
                            <td>
+                              onttrekking­Voor­Menselijke­Consumptie­JN
+                              </td>
+                           <td>specificeert of een Kaderrichtlijn Water waterlichaam is aangewezen als object om
+                              water te ontrekken voor menselijke consumptie</td>
+                           <td>
+                              J_of_N
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­KRWWaterlichaam­Wijziging
+                              </td>
+                           <td>specificeert welk type wijziging is aangebracht aan een Kaderrichtlijn Water waterlichaam</td>
+                           <td>
+                              KRWWaterlichaam­Wijziging­Type
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               afmeting­Waterlichaam
                               :</td>
                            <td>verwijst naar de gegevensgroep Afmeting­Waterlichaam</td>
                            <td>
                               Afmeting­Oppervlaktewaterlichaam
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              lengte
-                              </td>
-                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
-                           <td>
-                              Measure
                               </td>
                            <td>1</td>
                         </tr>
@@ -719,6 +709,16 @@
                               diepte
                               </td>
                            <td>specificeert de diepte van een oppervlaktewaterlichaam</td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte
+                              </td>
+                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
                            <td>
                               Measure
                               </td>
@@ -944,9 +944,9 @@
                         </tr>
                         <tr>
                            <td>
-                              naam
+                              code
                               </td>
-                           <td>specificeert de naam van een Kaderrichtlijn Water deelstroomgebiedsdistrict</td>
+                           <td>specificeert de code van een Kaderrichtlijn Water deelstroomgebiedsdistrict</td>
                            <td>
                               KRWDeelstroomgebiedsdistrict
                               </td>
@@ -954,9 +954,9 @@
                         </tr>
                         <tr>
                            <td>
-                              code
+                              naam
                               </td>
-                           <td>specificeert de code van een Kaderrichtlijn Water deelstroomgebiedsdistrict</td>
+                           <td>specificeert de naam van een Kaderrichtlijn Water deelstroomgebiedsdistrict</td>
                            <td>
                               KRWDeelstroomgebiedsdistrict
                               </td>
@@ -1057,6 +1057,17 @@
                         </tr>
                         <tr>
                            <td>
+                              catergorie­KRWOppervlaktewaterlichaam
+                              </td>
+                           <td>specificeert binnen welke categorie een Kaderrichtlijn Water oppervlaktewaterlichaam
+                              valt</td>
+                           <td>
+                              KRWOppervlaktewaterlichaam­Categorie
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               geometrie
                               </td>
                            <td>specificeert de geometrie van een Kaderrichtlijn Water oppervlaktewaterlichaam in
@@ -1078,17 +1089,6 @@
                         </tr>
                         <tr>
                            <td>
-                              catergorie­KRWOppervlaktewaterlichaam
-                              </td>
-                           <td>specificeert binnen welke categorie een Kaderrichtlijn Water oppervlaktewaterlichaam
-                              valt</td>
-                           <td>
-                              KRWOppervlaktewaterlichaam­Categorie
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               type­KRWOppervlaktewater
                               </td>
                            <td>specificeert het type Kaderrichtlijn Water oppervlaktewaterlichaam</td>
@@ -1099,21 +1099,51 @@
                         </tr>
                         <tr>
                            <td>
-                              motivering­Status­Sterk­Veranderd
+                              afmeting­Oppervlaktewaterlichaam
                               :</td>
-                           <td>verwijst naar de gegevensgroep Motivering­Status­Sterk­Veranderd</td>
+                           <td>verwijst naar de gegevensgroep Afmeting­Oppervlaktewaterlichaam</td>
                            <td>
-                              Motivering­Status­Sterk­Veranderd
+                              Afmeting­Oppervlaktewaterlichaam
                               </td>
                            <td>1</td>
                         </tr>
                         <tr>
                            <td>- 
-                              type­Fysieke­Aanpassing
+                              breedte
                               </td>
-                           <td>specificeert welke fysieke aanpassing is gedaan op een Kaderrichtlijn Water oppervlaktewaterlichaam</td>
+                           <td>specificeert de breedte van een oppervlaktewaterlichaam</td>
                            <td>
-                              <a class="link" href="#global_class_AquoDomeintabellen_FysiekeAanpassingType">Fysieke­Aanpassing­Type</a>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              diepte
+                              </td>
+                           <td>specificeert de diepte van een oppervlaktewaterlichaam</td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte
+                              </td>
+                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              motivering­Status­Sterk­Veranderd
+                              :</td>
+                           <td>verwijst naar de gegevensgroep Motivering­Status­Sterk­Veranderd</td>
+                           <td>
+                              Motivering­Status­Sterk­Veranderd
                               </td>
                            <td>1</td>
                         </tr>
@@ -1140,42 +1170,12 @@
                            <td>1</td>
                         </tr>
                         <tr>
-                           <td>
-                              afmeting­Oppervlaktewaterlichaam
-                              :</td>
-                           <td>verwijst naar de gegevensgroep Afmeting­Oppervlaktewaterlichaam</td>
-                           <td>
-                              Afmeting­Oppervlaktewaterlichaam
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
                            <td>- 
-                              lengte
+                              type­Fysieke­Aanpassing
                               </td>
-                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
+                           <td>specificeert welke fysieke aanpassing is gedaan op een Kaderrichtlijn Water oppervlaktewaterlichaam</td>
                            <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              breedte
-                              </td>
-                           <td>specificeert de breedte van een oppervlaktewaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              diepte
-                              </td>
-                           <td>specificeert de diepte van een oppervlaktewaterlichaam</td>
-                           <td>
-                              Measure
+                              <a class="link" href="#global_class_AquoDomeintabellen_FysiekeAanpassingType">Fysieke­Aanpassing­Type</a>
                               </td>
                            <td>1</td>
                         </tr>
@@ -1299,22 +1299,11 @@
                         </tr>
                         <tr>
                            <td>
-                              naam
+                              code
                               </td>
-                           <td>specificeert de naam die gebruikt wordt om een Kaderrichtlijn Water stroomgebiedsdistrict
-                              te identificeren</td>
+                           <td>specificeert de code van een Kaderrichtlijn Water stroomgebiedsdistrict</td>
                            <td>
                               KRWStroomgebiedsdistrict
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              internationale­Naam
-                              </td>
-                           <td>specificeert de internationale naam van een Kaderrichtlijn Water stroomgebiedsdistrict</td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
                               </td>
                            <td>1</td>
                         </tr>
@@ -1330,22 +1319,33 @@
                         </tr>
                         <tr>
                            <td>
+                              internationale­Naam
+                              </td>
+                           <td>specificeert de internationale naam van een Kaderrichtlijn Water stroomgebiedsdistrict</td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              naam
+                              </td>
+                           <td>specificeert de naam die gebruikt wordt om een Kaderrichtlijn Water stroomgebiedsdistrict
+                              te identificeren</td>
+                           <td>
+                              KRWStroomgebiedsdistrict
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               oppervlakte
                               </td>
                            <td>specificeert het oppervlakt van een Kaderrichtlijn Water stroomgebiedsdistrict in
                               KM</td>
                            <td>
                               Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              code
-                              </td>
-                           <td>specificeert de code van een Kaderrichtlijn Water stroomgebiedsdistrict</td>
-                           <td>
-                              KRWStroomgebiedsdistrict
                               </td>
                            <td>1</td>
                         </tr>
@@ -1493,6 +1493,26 @@
                         </tr>
                         <tr>
                            <td>
+                              geometrie
+                              </td>
+                           <td>specificeert de geometrie van een aanvoergebiedafvoergebied in een vlak</td>
+                           <td>
+                              GM_Surface
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              naam
+                              </td>
+                           <td>specificeert de naam van een aanvoergebiedafvoergebied</td>
+                           <td>
+                              CHARACTERSTRING
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               oppervlakte
                               </td>
                            <td>specificeert het oppervlakte van een aanvoergebiedafvoergebied</td>
@@ -1513,31 +1533,11 @@
                         </tr>
                         <tr>
                            <td>
-                              geometrie
-                              </td>
-                           <td>specificeert de geometrie van een aanvoergebiedafvoergebied in een vlak</td>
-                           <td>
-                              GM_Surface
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               stuurpeil
                               </td>
                            <td>specificeert het stuurpeil dat wordt gehandhaafd binnen een peilgebied</td>
                            <td>
                               Measure
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              naam
-                              </td>
-                           <td>specificeert de naam van een aanvoergebiedafvoergebied</td>
-                           <td>
-                              CHARACTERSTRING
                               </td>
                            <td>0 .. 1</td>
                         </tr>
@@ -2081,16 +2081,6 @@
                         </tr>
                         <tr>
                            <td>- 
-                              type­Fysieke­Aanpassing
-                              </td>
-                           <td>specificeert welke fysieke aanpassing is gedaan op een Kaderrichtlijn Water oppervlaktewaterlichaam</td>
-                           <td>
-                              <a class="link" href="#global_class_AquoDomeintabellen_FysiekeAanpassingType">Fysieke­Aanpassing­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               fysieke­Aanpassing­Toelichting
                               </td>
                            <td>geeft een toelichting op het type fysieke aanpassing dat is gedaan op een kaderrichtlijn
@@ -2108,6 +2098,16 @@
                               is door een fysieke aanpassing</td>
                            <td>
                               <a class="link" href="#global_class_AquoDomeintabellen_KRWWaterbeheerfunctie">KRWWaterbeheerfunctie</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              type­Fysieke­Aanpassing
+                              </td>
+                           <td>specificeert welke fysieke aanpassing is gedaan op een Kaderrichtlijn Water oppervlaktewaterlichaam</td>
+                           <td>
+                              <a class="link" href="#global_class_AquoDomeintabellen_FysiekeAanpassingType">Fysieke­Aanpassing­Type</a>
                               </td>
                            <td>1</td>
                         </tr>
@@ -2146,7 +2146,7 @@
                         </tr>
                         <tr>
                            <td>- 
-                              onderwerp
+                              bladwijzer
                               </td>
                            <td></td>
                            <td>
@@ -2166,7 +2166,7 @@
                         </tr>
                         <tr>
                            <td>- 
-                              bladwijzer
+                              onderwerp
                               </td>
                            <td></td>
                            <td>
@@ -2292,6 +2292,16 @@
          </section>
          <section id="global_package_Geografie">
             <h3>Domein   Geografie</h3>
+            <div class="imageinfo overview"><img src="data/Images/EAID_82D1C59E_4F46_4bf3_8DF6_114960901C32.png" usemap="#imagemap-EAID_82D1C59E_4F46_4bf3_8DF6_114960901C32" alt="Diagram: Geografie LOD1 - overzicht"><map name="imagemap-EAID_82D1C59E_4F46_4bf3_8DF6_114960901C32"><area shape="rect" alt="EcologischeZone" coords="1432,432,1708,618" href="#global_class_Geografie_EcologischeZone"><area shape="rect" alt="Oeverbekleding" coords="1578,1009,1849,1118" href="#global_class_Geografie_Oeverbekleding"><area shape="rect" alt="Beschoeiing" coords="1865,1009,2090,1118" href="#global_class_Geografie_Beschoeiing"><area shape="rect" alt="ScheepvaartRuimte" coords="48,584,355,786" href="#global_class_Geografie_ScheepvaartRuimte"><area shape="rect" alt="Waterverplaatsingsruimte" coords="394,584,590,786" href="#global_class_Geografie_Waterverplaatsingsruimte"><area shape="rect" alt="LandWaterGrens" coords="1119,716,1267,858" href="#global_class_Geografie_LandWaterGrens"><area shape="rect" alt="Waterbodemconstructie" coords="2017,700,2375,901" href="#global_class_Geografie_Waterbodemconstructie"><area shape="rect" alt="Oeverconstructie" coords="1714,698,1984,901" href="#global_class_Geografie_Oeverconstructie"><area shape="rect" alt="Oppervlaktewater" coords="681,451,976,635" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="Waterbodem" coords="2409,426,2605,559" href="#global_class_Geografie_Waterbodem"><area shape="rect" alt="Oeverzone" coords="1286,716,1550,858" href="#global_class_Geografie_Oeverzone"><area shape="rect" alt="LandWaterOvergang" coords="1080,452,1275,585" href="#global_class_Geografie_LandWaterOvergang"><area shape="rect" alt="Kustzone" coords="948,716,1097,858" href="#global_class_Geografie_Kustzone"><area shape="rect" alt="Grondwater" coords="2688,426,2884,559" href="#global_class_Geografie_Grondwater"></map><p><b>Geografie LOD1 - overzicht</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
+            <div class="imageinfo overview"><img src="data/Images/EAID_C92E2AD3_DF67_4e16_A0FA_E4D35E3BBDBC.png" usemap="#imagemap-EAID_C92E2AD3_DF67_4e16_A0FA_E4D35E3BBDBC" alt="Diagram: Geografie LOD0 - overzicht"><map name="imagemap-EAID_C92E2AD3_DF67_4e16_A0FA_E4D35E3BBDBC"><area shape="rect" alt="EcologischeZone" coords="1367,437,1562,570" href="#global_class_Geografie_EcologischeZone"><area shape="rect" alt="ScheepvaartRuimte" coords="48,595,243,727" href="#global_class_Geografie_ScheepvaartRuimte"><area shape="rect" alt="Waterverplaatsingsruimte" coords="336,593,532,726" href="#global_class_Geografie_Waterverplaatsingsruimte"><area shape="rect" alt="LandWaterGrens" coords="1048,702,1196,824" href="#global_class_Geografie_LandWaterGrens"><area shape="rect" alt="Waterbodemconstructie" coords="1770,704,1972,823" href="#global_class_Geografie_Waterbodemconstructie"><area shape="rect" alt="Oeverconstructie" coords="1529,704,1719,821" href="#global_class_Geografie_Oeverconstructie"><area shape="rect" alt="Oppervlaktewater" coords="655,437,850,570" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="Waterbodem" coords="2087,437,2282,570" href="#global_class_Geografie_Waterbodem"><area shape="rect" alt="Oeverzone" coords="1230,702,1378,824" href="#global_class_Geografie_Oeverzone"><area shape="rect" alt="LandWaterOvergang" coords="1021,437,1216,570" href="#global_class_Geografie_LandWaterOvergang"><area shape="rect" alt="Kustzone" coords="865,702,1013,824" href="#global_class_Geografie_Kustzone"><area shape="rect" alt="Grondwater" coords="2366,437,2561,570" href="#global_class_Geografie_Grondwater"></map><p><b>Geografie LOD0 - overzicht</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
             <section>
                <h4>Objecttypen   </h4>
                
@@ -2480,6 +2490,16 @@
                         </tr>
                         <tr>
                            <td>
+                              bevaarbaarheidsklassen
+                              </td>
+                           <td>specificeert de bevaarbaarheidsklasse van een scheepvaart ruimte en doorstroomopening</td>
+                           <td>
+                              Bevaarbaarheidsklassen
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               geometrie
                               </td>
                            <td>specificeert de geometrie van een scheepvaart ruimte en doorstroomopening in een lijn
@@ -2496,16 +2516,6 @@
                            <td>specificeert de naam van een scheepvaart ruimte en doorstroomopening</td>
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              bevaarbaarheidsklassen
-                              </td>
-                           <td>specificeert de bevaarbaarheidsklasse van een scheepvaart ruimte en doorstroomopening</td>
-                           <td>
-                              Bevaarbaarheidsklassen
                               </td>
                            <td>1</td>
                         </tr>
@@ -2783,21 +2793,21 @@
                         </tr>
                         <tr>
                            <td>
-                              type­Oppervlaktewater
-                              </td>
-                           <td>specificeert het type oppervlaktewater</td>
-                           <td>
-                              Oppervlaktewater­Type
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               naam
                               </td>
                            <td>specificeert de naam van een oppervlaktewater</td>
                            <td>
                               <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Oppervlaktewater
+                              </td>
+                           <td>specificeert het type oppervlaktewater</td>
+                           <td>
+                              Oppervlaktewater­Type
                               </td>
                            <td>1</td>
                         </tr>
@@ -3013,16 +3023,6 @@
                         </tr>
                         <tr>
                            <td>- 
-                              hoogte­Conctructie
-                              </td>
-                           <td>de hoogte van de constructie van een kunstwerk</td>
-                           <td>
-                              DECIMAL
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               breedte­Constructie
                               </td>
                            <td>de breedte van de constructie van een kunstwerk</td>
@@ -3033,9 +3033,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              lengte­Constructie
+                              diepte­Constructie
                               </td>
-                           <td>de lengte van de constructie van een kunstwerk</td>
+                           <td>de diepte van de constructie van een kunstwerk</td>
                            <td>
                               DECIMAL
                               </td>
@@ -3043,9 +3043,19 @@
                         </tr>
                         <tr>
                            <td>- 
-                              diepte­Constructie
+                              hoogte­Conctructie
                               </td>
-                           <td>de diepte van de constructie van een kunstwerk</td>
+                           <td>de hoogte van de constructie van een kunstwerk</td>
+                           <td>
+                              DECIMAL
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte­Constructie
+                              </td>
+                           <td>de lengte van de constructie van een kunstwerk</td>
                            <td>
                               DECIMAL
                               </td>
@@ -3076,6 +3086,20 @@
                               <a class="link" href="#global_class_Geografie_Oeverzone">Oeverzone</a>
                               
                               [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oeverconstructie
+                              [ 0 .. 1 ]
+                              
+                              ligt­Op: ligt­Op
+                              
+                              
+                              <a class="external-link" href="https://geonovum.github.io/IMGeo-objectenhandboek/ondersteunendwaterdeel">Ondersteunend­Waterdeel</a>
+                              
+                              [ 1 ]
                               </td>
                            <td></td>
                         </tr>
@@ -3188,16 +3212,6 @@
                         </tr>
                         <tr>
                            <td>- 
-                              hoogte­Conctructie
-                              </td>
-                           <td>de hoogte van de constructie van een kunstwerk</td>
-                           <td>
-                              DECIMAL
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               breedte­Constructie
                               </td>
                            <td>de breedte van de constructie van een kunstwerk</td>
@@ -3208,9 +3222,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              lengte­Constructie
+                              diepte­Constructie
                               </td>
-                           <td>de lengte van de constructie van een kunstwerk</td>
+                           <td>de diepte van de constructie van een kunstwerk</td>
                            <td>
                               DECIMAL
                               </td>
@@ -3218,9 +3232,19 @@
                         </tr>
                         <tr>
                            <td>- 
-                              diepte­Constructie
+                              hoogte­Conctructie
                               </td>
-                           <td>de diepte van de constructie van een kunstwerk</td>
+                           <td>de hoogte van de constructie van een kunstwerk</td>
+                           <td>
+                              DECIMAL
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte­Constructie
+                              </td>
+                           <td>de lengte van de constructie van een kunstwerk</td>
                            <td>
                               DECIMAL
                               </td>
@@ -3612,22 +3636,22 @@
                         </tr>
                         <tr>
                            <td>
-                              geometrie
-                              </td>
-                           <td>specificeert de geometrie van een land water overgang in een lijn of vlak</td>
-                           <td>
-                              Lijn­Of­Vlak
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               diepte
                               </td>
                            <td>verwijst naar de gegevensgroep Verticale­Referentie­Diepte en specificeert op welke
                               diepte een ecologische zone zich bevindt ten opzichte van een referentie vlak</td>
                            <td>
                               <a class="link" href="#global_class_JuridischOmgevingswet_VerticaleReferentieDiepte">Verticale­Referentie­Diepte</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>specificeert de geometrie van een land water overgang in een lijn of vlak</td>
+                           <td>
+                              Lijn­Of­Vlak
                               </td>
                            <td>1</td>
                         </tr>
@@ -4122,29 +4146,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              hoogte­Conctructie
-                              </td>
-                           <td>de hoogte van de constructie van een kunstwerk</td>
-                           <td>
-                              DECIMAL
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               breedte­Constructie
                               </td>
                            <td>de breedte van de constructie van een kunstwerk</td>
-                           <td>
-                              DECIMAL
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              lengte­Constructie
-                              </td>
-                           <td>de lengte van de constructie van een kunstwerk</td>
                            <td>
                               DECIMAL
                               </td>
@@ -4160,6 +4164,26 @@
                               </td>
                            <td>0 .. 1</td>
                         </tr>
+                        <tr>
+                           <td>- 
+                              hoogte­Conctructie
+                              </td>
+                           <td>de hoogte van de constructie van een kunstwerk</td>
+                           <td>
+                              DECIMAL
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte­Constructie
+                              </td>
+                           <td>de lengte van de constructie van een kunstwerk</td>
+                           <td>
+                              DECIMAL
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
                      </tbody>
                   </table>
                   
@@ -4168,6 +4192,16 @@
          </section>
          <section id="global_package_Hydrologie">
             <h3>Domein   Hydrologie</h3>
+            <div class="imageinfo overview"><img src="data/Images/EAID_4D971591_04A1_4701_8302_732C207FD780.png" usemap="#imagemap-EAID_4D971591_04A1_4701_8302_732C207FD780" alt="Diagram: Hydrologie LOD1 - overzicht"><map name="imagemap-EAID_4D971591_04A1_4701_8302_732C207FD780"><area shape="rect" alt="HydroIdentifier" coords="291,1216,556,1379" href="#global_class_Hydrologie_HydroIdentifier"><area shape="rect" alt="OppervlaktewaterKruising" coords="959,708,1227,853" href="#global_class_Hydrologie_OppervlaktewaterKruising"><area shape="rect" alt="AanvoergebiedAfvoergebiedRelatie" coords="2271,473,2598,594" href="#global_class_Beleid_AanvoergebiedAfvoergebiedRelatie"><area shape="rect" alt="Oppervlaktewater" coords="1446,1226,1741,1428" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="OppervlaktewaterKnooppunt" coords="407,928,876,1185" href="#global_class_Hydrologie_OppervlaktewaterKnooppunt"><area shape="rect" alt="Oppervlaktewatersegment" coords="1395,879,1663,1095" href="#global_class_Hydrologie_Oppervlaktewatersegment"><area shape="rect" alt="AanvoergebiedAfvoergebied" coords="1732,563,2189,809" href="#global_class_Beleid_AanvoergebiedAfvoergebied"></map><p><b>Hydrologie LOD1 - overzicht</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
+            <div class="imageinfo overview"><img src="data/Images/EAID_A1B897D1_5FA1_4024_B99F_21922C324C48.png" usemap="#imagemap-EAID_A1B897D1_5FA1_4024_B99F_21922C324C48" alt="Diagram: Hydrologie LOD0 - overzicht"><map name="imagemap-EAID_A1B897D1_5FA1_4024_B99F_21922C324C48"><area shape="rect" alt="OppervlaktewaterKruising" coords="910,551,1125,708" href="#global_class_Hydrologie_OppervlaktewaterKruising"><area shape="rect" alt="AanvoergebiedAfvoergebiedRelatie" coords="2178,261,2505,413" href="#global_class_Beleid_AanvoergebiedAfvoergebiedRelatie"><area shape="rect" alt="Oppervlaktewater" coords="1274,1118,1477,1233" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="OppervlaktewaterKnooppunt" coords="558,722,772,879" href="#global_class_Hydrologie_OppervlaktewaterKnooppunt"><area shape="rect" alt="Oppervlaktewatersegment" coords="1249,739,1464,897" href="#global_class_Hydrologie_Oppervlaktewatersegment"><area shape="rect" alt="AanvoergebiedAfvoergebied" coords="1677,358,1939,477" href="#global_class_Beleid_AanvoergebiedAfvoergebied"></map><p><b>Hydrologie LOD0 - overzicht</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
             <section>
                <h4>Objecttypen   </h4>
                
@@ -4469,6 +4503,16 @@
                         </tr>
                         <tr>
                            <td>
+                              begin­Leven­Versie
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
                               categorie­Oppervlaktewater­Knooppunt
                               </td>
                            <td>specificeert in welke categorie een oppervlaktewater knoopunt valt</td>
@@ -4476,6 +4520,17 @@
                               Oppervlaktewaterknooppunt­Categorie
                               </td>
                            <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              einde­Leven­Versie
+                              </td>
+                           <td>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object is opgeschort
+                              of de status historisch heeft ontvangen</td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                              </td>
+                           <td>0 .. 1</td>
                         </tr>
                         <tr>
                            <td>
@@ -4490,16 +4545,6 @@
                         </tr>
                         <tr>
                            <td>
-                              begin­Leven­Versie
-                              </td>
-                           <td></td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
                               geometrie
                               </td>
                            <td>specificeert de geometrie van een oppervlaktewater knooppunt in een punt</td>
@@ -4507,17 +4552,6 @@
                               GM_Point
                               </td>
                            <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              einde­Leven­Versie
-                              </td>
-                           <td>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object is opgeschort
-                              of de status historisch heeft ontvangen</td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
-                              </td>
-                           <td>0 .. 1</td>
                         </tr>
                         <tr>
                            <td>
@@ -4791,6 +4825,16 @@
          <section id="global_package_JuridischOmgevingswet">
             <h3>Domein   Juridisch (Omgevingswet)</h3>
             <div class="imageinfo "><img src="data/Images/EAID_6DD888B4_5D15_4b6f_AE67_D62B06ECD16C.png" usemap="#imagemap-EAID_6DD888B4_5D15_4b6f_AE67_D62B06ECD16C" alt="Diagram: Subjecten (onderhoudsplicht) - detail"><map name="imagemap-EAID_6DD888B4_5D15_4b6f_AE67_D62B06ECD16C"></map><p><b>Subjecten (onderhoudsplicht) - detail</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
+            <div class="imageinfo overview"><img src="data/Images/EAID_4113F670_06E0_487f_84E4_E11C2A2EA626.png" usemap="#imagemap-EAID_4113F670_06E0_487f_84E4_E11C2A2EA626" alt="Diagram: Watersysteem LOD0 - overzicht"><map name="imagemap-EAID_4113F670_06E0_487f_84E4_E11C2A2EA626"><area shape="rect" alt="Beschermingszone" coords="1110,879,1296,988" href="#global_class_JuridischOmgevingswet_Beschermingszone"><area shape="rect" alt="MaritiemeZone" coords="1054,659,1240,768" href="#global_class_JuridischOmgevingswet_MaritiemeZone"><area shape="rect" alt="JuridischeRuimte" coords="1215,303,1475,413" href="#global_class_JuridischOmgevingswet_JuridischeRuimte"><area shape="rect" alt="OndersteunendKunstwerk" coords="2351,876,2610,985" href="#global_class_JuridischOmgevingswet_OndersteunendKunstwerk"><area shape="rect" alt="WaterstaatkundigeZone" coords="1378,657,2610,768" href="#global_class_JuridischOmgevingswet_WaterstaatkundigeZone"><area shape="rect" alt="Bebouwingszone" coords="582,879,768,988" href="#global_class_JuridischOmgevingswet_Bebouwingszone"><area shape="rect" alt="ProfielVanVrijeRuimte" coords="362,879,548,988" href="#global_class_JuridischOmgevingswet_ProfielVanVrijeRuimte"><area shape="rect" alt="Reserveringszone" coords="810,879,1070,988" href="#global_class_JuridischOmgevingswet_Reserveringszone"><area shape="rect" alt="Waterbodem" coords="1644,1132,1829,1255" href="#global_class_Geografie_Waterbodem"><area shape="rect" alt="Oppervlaktewater" coords="1194,1132,1379,1255" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="LandWaterOvergang" coords="1417,1132,1602,1255" href="#global_class_Geografie_LandWaterOvergang"><area shape="rect" alt="Grondwater" coords="2720,1149,2899,1282" href="#global_class_Geografie_Grondwater"><area shape="rect" alt="Grondwaterlichaam" coords="2680,660,2940,769" href="#global_class_JuridischOmgevingswet_Grondwaterlichaam"><area shape="rect" alt="Oppervlaktewaterlichaam" coords="1379,876,1639,985" href="#global_class_JuridischOmgevingswet_Oppervlaktewaterlichaam"><area shape="rect" alt="Waterbergingsgebied" coords="1707,876,1967,985" href="#global_class_JuridischOmgevingswet_Waterbergingsgebied"></map><p><b>Watersysteem LOD0 - overzicht</b>
+                  
+                  <p></p>
+                  </p>
+            </div>
+            <div class="imageinfo overview"><img src="data/Images/EAID_545F1935_D5BF_4189_B1B2_1E33F0AC42D8.png" usemap="#imagemap-EAID_545F1935_D5BF_4189_B1B2_1E33F0AC42D8" alt="Diagram: Watersysteem LOD1 - overzicht"><map name="imagemap-EAID_545F1935_D5BF_4189_B1B2_1E33F0AC42D8"><area shape="rect" alt="AfmetingGrondwaterlichaam" coords="2545,668,2796,843" href="#global_class_JuridischOmgevingswet_AfmetingGrondwaterlichaam"><area shape="rect" alt="AfmetingOppervlaktewaterlichaam" coords="202,873,409,1013" href="#global_class_JuridischOmgevingswet_AfmetingOppervlaktewaterlichaam"><area shape="rect" alt="Beschermingszone" coords="719,697,1026,840" href="#global_class_JuridischOmgevingswet_Beschermingszone"><area shape="rect" alt="MaritiemeZone" coords="420,353,687,462" href="#global_class_JuridischOmgevingswet_MaritiemeZone"><area shape="rect" alt="JuridischeRuimte" coords="701,68,961,212" href="#global_class_JuridischOmgevingswet_JuridischeRuimte"><area shape="rect" alt="WaterstaatkundigeZone" coords="862,351,2095,462" href="#global_class_JuridischOmgevingswet_WaterstaatkundigeZone"><area shape="rect" alt="Bebouwingszone" coords="272,698,458,840" href="#global_class_JuridischOmgevingswet_Bebouwingszone"><area shape="rect" alt="ProfielVanVrijeRuimte" coords="48,698,234,840" href="#global_class_JuridischOmgevingswet_ProfielVanVrijeRuimte"><area shape="rect" alt="Reserveringszone" coords="489,697,687,839" href="#global_class_JuridischOmgevingswet_Reserveringszone"><area shape="rect" alt="Waterbodem" coords="1431,991,1626,1199" href="#global_class_Geografie_Waterbodem"><area shape="rect" alt="Oppervlaktewater" coords="881,996,1177,1199" href="#global_class_Geografie_Oppervlaktewater"><area shape="rect" alt="LandWaterOvergang" coords="1204,991,1399,1199" href="#global_class_Geografie_LandWaterOvergang"><area shape="rect" alt="Grondwater" coords="2322,1021,2501,1153" href="#global_class_Geografie_Grondwater"><area shape="rect" alt="Grondwaterlichaam" coords="2230,351,2587,496" href="#global_class_JuridischOmgevingswet_Grondwaterlichaam"><area shape="rect" alt="Oppervlaktewaterlichaam" coords="1086,698,1517,861" href="#global_class_JuridischOmgevingswet_Oppervlaktewaterlichaam"><area shape="rect" alt="Waterbergingsgebied" coords="1645,698,1927,873" href="#global_class_JuridischOmgevingswet_Waterbergingsgebied"></map><p><b>Watersysteem LOD1 - overzicht</b>
                   
                   <p></p>
                   </p>
@@ -5249,9 +5293,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              oppervlakte
+                              dikte­Gemiddeld
                               </td>
-                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
                            <td>
                               Measure
                               </td>
@@ -5270,22 +5314,22 @@
                         </tr>
                         <tr>
                            <td>- 
-                              dikte­Gemiddeld
-                              </td>
-                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               laagste­Punt
                               </td>
                            <td>specificeert het laagste punt van een grondwaterlichaam ten opzichte van een verticale
                               referentie</td>
                            <td>
                               <a class="link" href="#global_class_JuridischOmgevingswet_VerticaleReferentieDiepte">Verticale­Referentie­Diepte</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              oppervlakte
+                              </td>
+                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>
+                              Measure
                               </td>
                            <td>1</td>
                         </tr>
@@ -5739,16 +5783,6 @@
                         </tr>
                         <tr>
                            <td>- 
-                              lengte
-                              </td>
-                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               breedte
                               </td>
                            <td>specificeert de breedte van een oppervlaktewaterlichaam</td>
@@ -5762,6 +5796,16 @@
                               diepte
                               </td>
                            <td>specificeert de diepte van een oppervlaktewaterlichaam</td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte
+                              </td>
+                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
                            <td>
                               Measure
                               </td>
@@ -6037,9 +6081,9 @@
                         </tr>
                         <tr>
                            <td>- 
-                              oppervlakte
+                              dikte­Gemiddeld
                               </td>
-                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
                            <td>
                               Measure
                               </td>
@@ -6058,22 +6102,22 @@
                         </tr>
                         <tr>
                            <td>- 
-                              dikte­Gemiddeld
-                              </td>
-                           <td>specificeert de gemiddelde dikte van een grondwaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               laagste­Punt
                               </td>
                            <td>specificeert het laagste punt van een grondwaterlichaam ten opzichte van een verticale
                               referentie</td>
                            <td>
                               <a class="link" href="#global_class_JuridischOmgevingswet_VerticaleReferentieDiepte">Verticale­Referentie­Diepte</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              oppervlakte
+                              </td>
+                           <td>specificeert de oppervlakte van een grondwaterlichaam</td>
+                           <td>
+                              Measure
                               </td>
                            <td>1</td>
                         </tr>
@@ -6126,16 +6170,6 @@
                         </tr>
                         <tr>
                            <td>- 
-                              lengte
-                              </td>
-                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
                               breedte
                               </td>
                            <td>specificeert de breedte van een oppervlaktewaterlichaam</td>
@@ -6149,6 +6183,16 @@
                               diepte
                               </td>
                            <td>specificeert de diepte van een oppervlaktewaterlichaam</td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte
+                              </td>
+                           <td>specificeert de lengte van een oppervlatewaterlichaam</td>
                            <td>
                               Measure
                               </td>
