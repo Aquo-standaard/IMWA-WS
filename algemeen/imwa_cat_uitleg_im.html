@@ -1,7 +1,6 @@
 <!--Hoofdstuk 2 Introductie gegevensdefinitie en modelelementen-->
-<h1>Gegevensdefinitie en modelelementen</h1>
+<h1>Gegevensdefinitie</h1>
 <section id="gegevensdefinitie">
-<h2>Gegevensdefinitie</h2>	
 <p>De gegevensdefinitie vormt het hart van de catalogus en geeft een beschrijving van alle gegevens van een informatiemodel. 
 	Eerst wordt de definitie van een domein gegeven inclusief de plaatjes van het zgn. <i>domeinmodel</i>, en vervolgens de definities van de <i>entiteiten</i> waaruit het domein is opgebouwd met de eigenschappen van die entiteiten - de <i>attributen</i> - en de relaties met andere entiteiten. 
 De volgende aspecten van de gegevens worden vastgelegd:</p>
@@ -17,11 +16,11 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 </section>
 
 <section id="introModel">
-<h2>Modelelementen</h2>
+<h1>Modelelementen</h1>
 <p>De modelelementen van een informatiemodel zijn de bouwstenen die samen de structuur en de functionaliteit van het model definiëren. Elk element speelt een specifieke rol in het beschrijven van hoe data wordt georganiseerd en beheerd binnen een systeem. Het model kent een aantal vaste elementen die bij ieder informatiemodel terugkomen. Een begrip van deze elementen vergroot de leesbaarheid van het informatiemodel en de catalogus. </p>
 	
 <section id='objecten'>
-	<h3>Objecten</h3>
+	<h2>Objecten</h2>
 <ul>
     <li><b>Object</b> Voor het belangrijkste element zijn er vanuit verschillende perspectieven verschillende benamingen: object, informatieobject, objecttype (MIM), entiteit of klasse (UML). De concepten zijn in nuance verschillend, maar al deze concepten vertegenwoordigen een onderscheidend geheel van eigenschappen die gezamenlijk betekenis hebben. Een entiteit heeft altijd een naam en een definitie. In het model zijn de objecten te herkennen aan het begrip Objecttype.</li>
     <li><b>Attribuut</b> Met attributen worden de eigenschappen of kenmerken van een object vastgelegd. In het domeinmodel zijn de attributen te herkennen aan het begrip Attribuutsoort.</li>
@@ -31,7 +30,7 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 
 
 <section id="relaties">
-	<h3>Relaties</h3>
+	<h2>Relaties</h2>
 <p>Het model laat daarnaast ook zien hoe objecten aan elkaar gerelateerd zijn. Een relatie heeft altijd een richting en in de meeste gevallen loopt deze van bron naar doel. De meest voorkomende relatie in IMWA is de generalisatie. Daarnaast komt een enkele keer de associatierelatie voor. </p>
   <p>
 <figure id='image002'>
@@ -48,10 +47,10 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
 
 
 <section id='domeinen-en-datatypen'>
-	<h3>Domeinen en datatypen</h3>
+	<h2>Domeinen en datatypen</h2>
 <p>In de objecten staan de namen opgesomd van de attributen, de eigenschappen van het object, met daarachter het <i>datatype</i> of de naam van het bijbehorende <i>domein</i>. En de kardinaliteit van het attribuut wordt vermeld. Bij attributen is de kardinaliteit alleen opgenomen wanneer die ongelijk is aan 1 (1 staat voor 'verplicht aanwezig'). </p>
 	<section id="datatype">
-		<h4>Datatypen</h4>
+		<h3>Datatypen</h3>
 		Enkele datatype zijn enkelvoudig: number, integer, characterstring, date, year. Dit zijn de "gedeclareerde primitieve datatypen" zoals in MIM1.1 geformuleerd. Sommige datatype zijn complexer en meervoudig.
   <p>
   <ul>
@@ -61,7 +60,7 @@ De volgende aspecten van de gegevens worden vastgelegd:</p>
   </p>	
 </section><!--datatypen-->
 	<section id="domeinen">
-		<h4>Domeinen</h4>
+		<h3>Domeinen</h3>
 		<p>Een uitbreidbare waardelijst wordt gebruikt wanneer uitbreiding mogelijk moet zijn. Iedere waarde van de lijst heeft een specifieke betekenis (omschrijving) Eventueel worden andere aspecten van de waarde vastgelegd. </p>
 <p>Bij een uitbreidbare waardelijst wordt de naam van de lijst gegeven. De inhoud van de lijst is in een apart hoofdstuk van de gegevensdefinitie opgenomen.</p>
 	</section> <!--domeinen-->		
