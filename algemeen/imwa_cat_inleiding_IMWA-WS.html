@@ -14,52 +14,86 @@
     <a href="https://aquo-standaard.github.io/IMWA-basis/#cat"target=_blank >Catalogus IMWA Basis</a></p> 
 </section>
   <section id="IMWA-WS">
-<h1>IMWA Watersysteem</h1>
-  <p>Een van onderdelen of werkvelden in het Informatiemodel Water (IMWA) is het onderdeel Watersysteem.<p>
-	  
-  <P>Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in IMWA de Catalogus IMWA Basis.</P>
-	IMWA Watersysteem beschrijft, vanuit verschillende perspectieven, de objecten die voor kunnen komen in een watersysteem. Deze perspectieven zijn:<br> 
-	  <li>Geografie (de daadwerkelijke fysieke objecten in de werkelijkheid),
-	  <li>Beleid (de Kaderrichtlijn Water en peilbeheer),
-	  <li>Juridisch (de omgevingswet) en
-	  <li>Hydrologie (hydrologisch netwerk).<br> 
+# IMWA Watersysteem
 
-  <P>Op basis van de informatiebehoeften in de perspectieven wordt het watersysteem anders ingedeeld. Er zijn daarom ook objecten die perspectief specifiek zijn.</P> 
- 
-  <p>De objecten die in meerdere perspectieven bestaan zijn aan elkaar gerelateerd. Zo wordt bijv. duidelijk dat het ‘Kaderrichtlijn Water oppervlaktewaterlichaam’ uit het perspectief Beleid gerelateerd is aan de fysieke objecten ‘waterbodem’, ‘oppervlaktewater’ en ‘oeverzone’ uit het perspectief Geografie.</p> 
-		  
-  <p>De perspectieven beleid, juridisch en hydrologie hebben op dit moment geen interne relaties met elkaar, omdat hier (nog) geen informatiebehoefte voor is.</p>
-		  
-  <p>IMWA Watersysteem heeft ook een relatie met de andere onderdelen van IMWA. Door deze relatie kan er bijvoorbeeld iets worden gezegd over een specifiek kunstwerk (uit IMWA Kunstwerken) binnen de context van het watersysteem.</p>
+IMWA Watersysteem beschrijft vanuit vier verschillende perspectieven de objecten die voor kunnen komen in een watersysteem. De verschillende perspectieven zijn:
 
-  <p>IMWA Watersysteem is een veelzijdig onderdeel dat de verschillende perspectieven waarop een watersysteem kan worden bekeken verenigd.  Het stelt waterbeheerders in staat om de verschillende objecten in die context te plaatsen.</p> 	
+- **Geografie** (de daadwerkelijke fysieke objecten)  
+- **Beleid** (de Kaderrichtlijn Water en peilbeheer)  
+- **Juridisch** (de Omgevingswet)  
+- **Hydrologie** (hydrologisch netwerk)  
 
-</p>
-  </section> 
-  <section id="modelleerbeslissingen">
-	<h2>Modelleerbeslissingen</h2>
-	  <p>Binnen IMWA Watersysteem zijn modelleerbeslissingen genomen. Deze beslissingen vergen een nadere toelichting. Hieronder is te lezen welke beslissingen er zijn genomen en waarom deze zijn genomen. Let op! Binnen het modelleren van informatie zijn altijd meerdere opties om deze informatie te structureren binnen een informatiemodel. Door vele mogelijkheden moeten er beslissingen worden genomen. Dit zijn beslissingen die weloverwogen zijn gemaakt afhankelijk van de context van de te modelleren informatie.</p>
-	      <ul>
-			<li><strong>1. Modelleerbeslissing: </strong>Er is gekozen om IMWA Watersysteem op te splitsen in een aantal domeinen. De domeinen: Beleid (KRW/peilbeheer), Geografie, Hydrologie en Juridisch (Omgevingswet). De reden dat er gekozen is om IMWA Watersysteem op te splitsen is, omdat IMWA Watersysteem veel perspectieven omvat. Ieder perspectief bevat zijn eigen objecten die allen eigen eigenschappen hebben. Om overzicht te bewaren is er gekozen om IMWA Watersysteem op te splitsen in de bovengenoemde domeinen. Ieder domein heeft ook zijn eigen diagrammen. De domeinen binnen IMWA Watersysteem hebben wel relaties met elkaar, zodat domein overstijgend binnen IMWA Watersysteem kan worden uitgewisseld.
-			<li><strong>2. Modelleerbeslissing: </strong>Binnen het model is er voor gekozen om 2 oppervlaktewaterlichamen en 2 grondwaterlichamen te modelleren. Ieder van deze oppervlaktewaterlichamen en grondwaterlichamen komt voor in een ander domein binnen IMWA Watersysteem. Dit zijn KaderrichtlijnWaterOppervlaktewaterlichaam en KaderrichtlijnWaterGrondwaterlichaam (Beleid) en Oppervlaktewaterlichaam en Grondwaterlichaam (Juridisch). De reden dat er 2 oppervlaktewaterlichamen zijn gemodelleerd is, omdat in beide perspectieven het Oppervlaktewaterlichaam geheel andere eigenschappen en relaties heeft die nooit goed gemodelleerd zouden kunnen worden op het moment dat er maar 1 oppervlaktewaterlichaam gemodelleerd zou worden die gebruikt zou worden voor beide perspectieven.
-			<li><strong>3. Modelleerbeslissing: </strong>Op advies van een gebruikersgroep bestaande uit hydrologen en DAMO dat alle gebieden waar water aanwezig/stroomt bijvoorbeeld stroomgebied, peilgebied, boezemgebied, afwateringseenheid etc. ondergebracht onder het object AanvoergebiedAfvoergebied. Zie ook domeintabel AanvoergebiedAfvoergebiedType. Het object AanvoergebiedAfvoergebied heeft een ruimtelijke relatie met zichzelf, waardoor de verschillende typen gebieden in relatie tot elkaar kunnen staan.
-			<li><strong>4. Modelleerbeslissing: </strong>Binnen het domein Hydrologie zijn de objecten OppervlaktewaterKnooppunt, OppervlaktewaterSegement en OppervlaktewaterKruising direct een specialisatie gemaakt van de objecten met dezelfde naam in INSPIRE. De reden dat deze direct specialisaties zijn gemaakt van de objecten in INSPIRE is, omdat de NEN3610:2022 (het bovenliggende model van Aquo) aangeeft dat INSPIRE gevolgd dient te worden wanneer netwerken worden gemodelleerd.
-			<li><strong>5. Modelleerbeslissing: </strong>Binnen het domein Juridisch is besloten om, beter bekend als waterstaatswerken, te modelleren als JuridischeRuimte van het type WaterstaatkundigeZone. Deze zones kunnen onderlinge relaties hebben met elkaar in de fysieke ruimte. Ondersteunende kunstwerken zijn gemodelleerd als liggende binnen een WaterstaatkundigeZone en ondersteunend aan een Oppervlaktewaterlichaam, Waterbergingsgebied en Waterkering. De reden dat hiervoor gekozen is, omdat de wet niet duidelijk voorschrijft wat een waterstaatswerk is. De wet zegt dat een waterstaatswerk de bovengenoemde objecten zijn zonder duidelijk aan te geven wat dit precies inhoudt. Deze waterstaatwerken bestaan uit daadwerkelijk fysieke objecten die een specifieke functie uitoefenen en daarom worden gekenmerkt als een waterstaatswerk, zoals een gemaal, dijk, sluis, bergingsgebied, waterbodem, oppervlaktewater etc. Deze objecten liggen op een bepaalde plek in de fysieke ruimte. Deze fysieke objecten bij elkaar op een bepaalde plek met een specifieke functie vormen een waterstaatwerk. Dit is waarom er gekozen is om de waterstaatwerken te modelleren als zones waarbinnen fysieke objecten aanwezig zijn die een bepaalde functie vervullen.
-			<li><strong>6. Modelleerbeslissing: </strong>In het domein Juridisch zijn de objecten Kunstwerk en Waterkering een andere kleur, omdat deze uit een ander domein van IMWA afkomstig zijn, namelijk uit het domein Kunstwerken en Waterveiligheid. Binnen het domein Juridisch van IMWA Watersysteem hebben Kunstwerk en Waterkering een relatie met de waterstaatkundige zones en juridische ruimtes. Hierdoor ontstaat er een duidelijke verbindingen tussen de verschillende domeinen binnen geheel IMWA.
-			<li><strong>7. Modelleerbeslissing: </strong>Binnen het perspectief van de Kaderrichtlijn Water zijn wij er ons van bewust dat er veel meer objecten een rol spelen dan alleen de oppervlaktewaterlichamen en grondwaterlichamen, zoals bijvoorbeeld een impact, kwaliteitselement, belasting, uitzonderingsbepaligen, maatregelen etc. Er is op dit moment de bewuste keuze gemaakt om deze objecten niet te modelleren binnen IMWA Watersysteem. De reden dat wij deze objecten nog niet gemodelleerd hebben, is omdat deze objecten veel relaties hebben die domeinoverstijgend zijn (bijvoorbeeld deze relaties liggen buiten het domein Watersysteem) of deze objecten moeten worden gemodelleerd worden in een ander domein, zoals bijvoorbeeld IMWA Normen, IMWA Monitoring en IMWA Observatie, Meting en Bemostering. Binnen IMWA Watersysteem hebben wij besloten om de focus te leggen op de manier waarop een watersysteem kan worden ingedeeld en waar deze uit kan bestaan.
-	</section>
-	<section id="openstaand">
-	<h2>Openstaande discussiepunten</h2>
-  <p>Tijdens het hermodelleren van IMWA Watersysteem kwamen er een aantal vragen naar voren die wij graag aan de gebruikers voor willen leggen. Graag zouden wij als Informatiehuis Water suggesties en feeback willen ontvangen op deze openstaande punten. Deze vragen staan hieronder beschreven:</p>
-	        <ul>
-			<li><strong>1. Openstaande discussie: </strong>Binnen het model hebben wij oeverconstructie en waterbodemconstructie. Kloppen deze objecten? Binnen deze objecten hebben wij typeringen aangebracht in de domeintabellen OeverbekledingType, BeschoeiingType en WaterbodemconstructieType. De typeringen staan in de bijbehorende domeintabellen kloppen deze waarden moeten er waarden worden toegevoegd zo ja welke? Hoe wordt dit in de praktijk gezien en genoemd? Kloppen de domeinwaarden in de tabellen?
-                        <li><strong>2. Openstaande discussie: </strong>Is het wenselijk om het type materiaal voor de oeverconstructie en waterbodemconstructie uit te wisselen? Zo ja welke materialen zijn dit?
-			<li><strong>3. Openstaande discussie: </strong>Is het wenselijk om gebied gebruik uit te wisselen van waterrijke gebieden? Bijvoorbeeld dan kan aangegeven worden dat een gebied is aangewezen als een overstromingsvlakte, wetering, drasland, moeras ect. Welke eigenschappen en uitwisseldoel horen hier dan bij? Welk gebied gebruik dient uitgewisseld te worden?
-			<li><strong>4. Openstaande discussie: </strong>Is het wenselijk om een complete domeinlijst te maken van alle oppervlaktewaterlichamen en grondwaterlichamen in Nederland inclusief historie?
-			<li><strong>5. Openstaande discussie: </strong>Op het moment is het alleen mogelijk om aan te geven dat een KRWWaterlichaam aangewezen is als of interactie heeft met een Beschermd gebied. Daarnaast kan worden uitgewisseld om wat voor type beschermd gebied het gaat. Is het wenselijk om nog meer eigenschappen over beschermde gebieden uit te wisselen? Zo ja welke zijn dit? Is er daarnaast ook behoefte om een connectie te leggen met andere modellen, zodat de gegevensuitwisseling tussen modellen kan worden gerealiseerd. Zoals verbinding met de omgevingswet of het informatiemodel natuur voor de natura 2000 gebieden?
-			<li><strong>6. Openstaande discussie: </strong>Is het wenselijk om stuurpeil toe te voegen? Dit is naar aanleiding van een openstaand wijzigingsvoorstel ingediend door WS De Dommel W-2302-0012 (op de Aquo-sharepoint). Hierin heeft het De Dommel een voorstel gedaan om een onderscheidt te maken tussen het streefpeil dat is afgesproken in een peilbesluit en het stuurpeil, een peil dat ergens tijdelijk gehandhaafd kan worden. Het stuurpeil kan afwijken het streefpeil wanneer nodig en tijdelijk wordt ingesteld op bijvoorbeeld een stuw omdat er werkzaamheden moeten worden verricht. Is het wenselijk om deze twee elementen streefpeil en stuurpeil duidelijk te scheiden van elkaar? Indien ja is stuurpeil dan een attribuut van AfvoergebiedAanvoergebied? 
-			<li><strong>7. Openstaande discussie: </strong>Is een stuurpeil iets anders of hetzelfde als een afwijkend peil waar een ontheffing voor wordt gegeven? Valt een stuurpeil ook onder een ontheffing of hoeft voor een stuurpeil geen ontheffing te worden uitgevaardigd?
-			<li><strong>8. Openstaande discussie: </strong>Op dit moment heeft PeilbesluitGebied geen eigenschappen (attributen) welke eigenschappen dienen te worden uitgewisseld voor een PeilbesluitGebied? 
-			<li><strong>9. Openstaande discussie: </strong>Kloppen de al aanwezige waarden in de domeintabel AanvoergebiedAfvoergebiedType? Zijn er gebieden die missen en zo ja welke zijn dit?
-	         </ul>
-  </section>
+Elk perspectief heeft andere informatie nodig. Daarom is het watersysteem per perspectief anders ingedeeld (of gemodelleerd). Sommige objecten komen alleen in één perspectief voor en sommige objecten bestaan in meerdere perspectieven en zijn dan met elkaar verbonden.
+
+**Toelichting aan de hand van het object `oppervlaktewaterlichaam` dat in alle perspectieven voorkomt:**
+
+- *Geografie* kijkt waar het ligt en hoe het heet.  
+- *Beleid* kijkt naar wat voor beleid er van toepassing is en welke doelen er gehaald moeten worden.  
+- *Hydrologie* kijkt naar hoe verschillende wateren aan elkaar gerelateerd zijn in een netwerk.  
+- *Juridisch* kijkt naar welke wetgeving van toepassing is en hoe deze wordt toegepast.  
+
+IMWA Watersysteem is een veelzijdig onderdeel dat de verschillende perspectieven waarop een watersysteem kan worden bekeken, verenigt. Het stelt waterbeheerders in staat om objecten in de juiste context te plaatsen.
+
+## 2.1.2 Modelleerbeslissingen
+
+Er zijn vaak meerdere opties om informatie te structureren in een informatiemodel. Hieronder een overzicht van de modelleerbeslissingen zoals die voor IMWA Watersysteem zijn genomen:
+
+1. IMWA Watersysteem is opgesplitst in de perspectieven: Geografie, Beleid (KRW/peilbeheer), Juridisch (Omgevingswet) en Hydrologie (netwerk). Elk perspectief bevat zijn eigen objecten met eigenschappen, en heeft relaties met andere perspectieven. Ieder perspectief heeft eigen diagrammen.
+
+2. De ruimtelijke relaties tussen objecten zijn niet uitgewerkt in het conceptuele model. Deze worden pas uitgewerkt in logische informatiemodellen, afgestemd op specifieke uitwisseldoelen.
+
+3. Voor zowel oppervlaktewaterlichaam als grondwaterlichaam zijn twee objecten gemodelleerd:
+   - In perspectief **Beleid (KRW)**: `KRWOppervlaktewaterlichaam` en `KRWGrondwaterlichaam`
+   - In perspectief **Juridisch**: `Oppervlaktewaterlichaam` en `Grondwaterlichaam`  
+   Ze hebben verschillende contexten en eigenschappen.
+
+4. Binnen perspectief **Beleid** is geen object `AfvoergebiedAanvoergebied` gemodelleerd, maar wel `Afwateringsgebied`.
+
+5. Onder `Afwateringsgebied` zijn verschillende specialisaties gemodelleerd:
+   - *Peilgebied*, *Peilafwijkinggebied*, *Bemalingsgebied*, *Boezem*, *Polder*, *Stroomgebied*, *Afwateringseenheid*  
+   Deze hebben verschillende grondslagen:
+   - Juridisch: *Peilgebied*, *Peilafwijkinggebied*
+   - Geografisch: *Bemalingsgebied*, *Polder*, *Boezem*
+   - Hydrologisch: *Stroomgebied*, *Afwateringseenheid*  
+   Het object `Afwateringsgebied` heeft daarom twee moederobjecten uit NEN3610:2022: *Juridische ruimte* en *Geografische ruimte*.
+
+6. Objecten `OppervlaktewaterKnooppunt`, `OppervlaktewaterSegment`, `OppervlaktewaterKruising` (Hydrologie) zijn specialisaties van INSPIRE-objecten, conform NEN3610:2022.
+
+7. In perspectief **Juridisch** is het object `Waterstaatkundig gebied` toegevoegd, met specialisaties:
+   - *Waterstaatswerk* en *Waterstaatkundige zone*  
+   Onder *Waterstaatswerk* vallen:
+   - *Oppervlaktewaterlichaam*, *Bergingsgebied*, *Waterkering*  
+   Fysieke objecten uit andere delen van IMWA (zoals Kunstwerken en Geografie) vallen binnen deze juridische gebieden.
+
+8. Objecten `Kunstwerk` en `Waterkering` hebben een andere kleur in perspectief Juridisch, omdat ze uit respectievelijk IMWA Kunstwerken en IMWA Waterveiligheid komen.
+
+9. In juridisch perspectief is er een koppeling met het conceptueel model Omgevingswet:
+   - *Waterstaatkundig gebied* ↔ *Gebiedsaanwijzing water en watersysteem*, *Beperkingsgebied*
+
+10. In peilbeheerperspectief is een vergelijkbare koppeling gelegd:
+    - *Peilgebied* en *Peilafwijkinggebied* ↔ *Gebiedsaanwijzing water en watersysteem*
+
+11. Binnen de Kaderrichtlijn Water zijn meer objecten relevant, zoals:
+    - *Impact*, *Kwaliteitselement*, *Belasting*, *Uitzonderingsbepalingen*, *Maatregelen*, enz.  
+    Deze worden mogelijk in andere onderdelen van IMWA ondergebracht (nog te bepalen).
+
+12. `Duin` en `Hoge grond` zijn toegevoegd aan het diagram Geografie onder het object *Bodem*.
+
+## 2.1.3 Toekomstige acties
+
+Naar aanleiding van feedback op IMWA Watersysteem moeten onderstaande acties nog worden besproken of uitgewerkt:
+
+1. Onderzoeken hoe context en gebruik kunnen worden aangegeven bij domeintabellen en -waarden.
+2. Begrip opstellen voor `operationeel peil` en relateren aan andere peilen binnen Aquo-standaard.
+3. Domeintabel `ProfielverdedigingConstructieType` controleren op volledigheid met waterbeheerders.
+4. Domeintabel `SubstraatType` controleren op volledigheid met waterbeheerders.
+5. Relevante materialen voor profielverdediging bepalen, inclusief hergebruik in kunstwerken.
+6. Relaties tussen verschillende afwateringsgebieden bepalen per uitwisseldoel.
+7. Onderzoeken of `Literatuurverwijzing` kan worden verplaatst van beleidsperspectief naar `IMWA Basis`.
+8. Domeinlijst `WaterstaatkundigeZoneType` controleren op compleetheid.
+9. Domeintabel `OeverType` controleren op volledigheid.
+10. Domeintabel `OppervlaktewaterType` controleren op volledigheid.
+11. Definities opstellen voor domeinwaarden (zoals bij IMWA Kunstwerken), samen met waterbeheerders.
+12. Mogelijkheid modelleren voor uitwisseling van boven- en ondergrens bij flexibele streefpeilen binnen IMWA Normen.
+13. Mogelijkheid met linked data onderzoeken om te linken naar lijsten bij de bron (bv. bevaarbaarheidsklasse uit BRT).
+14. Domeintabel `StreefpeilType` samenstellen met waterbeheerders.
