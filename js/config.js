@@ -2,7 +2,7 @@ let respecConfig = {
   //useLogo: true,
   //useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Informatiemodel Water (IMWA) Kunstwerken",
+  title: "Informatiemodel Water (IMWA) Watersysteem",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus:   "WV",               // Werkversie
   //labelColor: "#ffcc00",
@@ -22,16 +22,16 @@ let respecConfig = {
   //specType: "BP",                 // Best Practice
 
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
-  pubDomain: "IMWA-Kunstwerken",
+  pubDomain: "IMWA-Watersysteem",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
-  //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
-  //licence: "cc0",                 // Public Domain Dedication
-  license: "cc-by",                 // Attribution, met bronvermelding
+  license: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
+  //license: "cc0",                 // Public Domain Dedication
+  //license: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "IMWA-KW",
+  shortName: "IMWA-WS",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2025-03-17",
+  publishDate: "2024-06-13",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
@@ -40,16 +40,16 @@ let respecConfig = {
   previousMaturity: "vv",
   
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Aquo-standaard/IMWA-KW",
+  github: "https://github.com/Aquo-standaard/IMWA-WS",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/Aquo-standaard/IMWA-KW/issues",
+  issueBase: "https://github.com/Aquo-standaard/IMWA-WS/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github.com/Aquo-standaard/IMWA-KW",
+  edDraftURI: "https://github.com/Aquo-standaard/IMWA-WS",
   //-- license: voor de geldende gebruiksvoorwaarden
 
   //-- Optionele parameters:
   emailComments: "servicedesk@ihw.nl",         // reactie mailadres, alleen bij CV!
-  subtitle: "Versie: 2024.1.0",                         // Subtitel van het document
+  subtitle: "Versie 1.0",                         // Subtitel van het document
   //maxTocLevel: 4,                           // Aantal niveau's ToC, default is 0
   //nl_organisationName: "IHW",
   //sotdText: "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
