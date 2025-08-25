@@ -1,4 +1,4 @@
-# Het informatiemodel Water
+# Het informatiemodel Water (IMWA)
 
 De basis van de Aquo-standaard (Aquo) wordt gevormd door het informatiemodel Water (IMWA). IMWA biedt de basis voor de informatiestructuur die binnen de gegevensuitwisseling wordt gebruikt. Dit betekend dat binnen IMWA de relevante objecten, onderlinge relaties tussen objecten en eigenschappen over objecten die worden gebruikt binnen het waterbeheer beschrijft.
 
@@ -15,7 +15,7 @@ In de onderstaande afbeelding is een (voorlopige) weergave te zien van IMWA en d
 
 Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis: [Catalogus IMWA Basis](https://aquo-standaard.github.io/IMWA-basis/#cat)
 
-# IMWA Watersysteem
+## IMWA Watersysteem
 
 Er kan op verschillende manieren (perspectieven) naar een watersysteem gekeken worden. Hoe naar het watersysteem gekeken wordt, is afhankelijk van het werkveld of interesse van een persoon. Het perspectief op het watersysteem bepaald welke informatie gewenst is. En tussen verschillende perspectieven zit vaak een nuancering in informatiebehoefte. In IMWA Watersysteem zijn daarom 4 perspectieven verwerkt:
 
@@ -33,7 +33,7 @@ Toelichting aan de hand van het object oppervlaktewaterlichaam dat in alle persp
 - 'hydrologie': hoe is het oppervlaktewater verbonden met andere wateren?
 - 'juridisch': welke wetgeving is er van toepassing in het oppervlaktewater?
 
-## Modelleerbeslissingen
+### Modelleerbeslissingen
 
 Er zijn vaak meerdere opties om informatie te structureren in een informatiemodel. Hieronder een overzicht van de modelleerbeslissingen zoals we die voor IMWA Watersysteem hebben genomen.
 
@@ -61,7 +61,7 @@ Er zijn vaak meerdere opties om informatie te structureren in een informatiemode
 
 12. **Duin en hoge grond zijn toegevoegd** aan het diagram geografie als specialisaties van bodem.
 
-## Openstaande acties
+### Openstaande acties
 
 Naar aanleiding van de feedback op IMWA Watersysteem zijn er een aantal acties die in de toekomst ondernomen moeten worden. Deze acties moeten of met de waterbeheerders worden besproken of intern worden uitgewerkt.
 
