@@ -2,7 +2,7 @@
    <body>
       <section id="cat" class="normative">
          <h2>Gegevensdefinitie</h2>
-         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-105404 imvertor Nightly-build.0-->
+         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-142447 imvertor Nightly-build.0-->
          <section id="global_package_Watersysteem">
             <h3>Domein   Watersysteem</h3>
             <div class="imageinfo overview">
@@ -3862,6 +3862,166 @@
                   
                   </section>
                
+               <section id="global_class_Watersysteem_PeilbesluitGebied">
+                  <h5>   Peilbesluit­Gebied</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Peilbesluit­Gebied</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-b5e11c28-c26e-54bd-8788-b51ddb6f2e91
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een registratieve ruimte waar een peilbesluit van toepassing is en waarin één of meerdere
+                                 peilgebieden zijn aangewezen</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een aanvoergebiedafvoergebied in een vlak</p>
+                              </td>
+                           <td>
+                              GM_Surface
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              naam
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Peilafwijkinggebied">Peilafwijkinggebied</a>
+                              
+                              [ 0 .. * ]
+                              
+                              ligt­In
+                              
+                              Peilbesluit­Gebied
+                              [ 0 .. 1 ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Peilgebied">Peilgebied</a>
+                              
+                              [ 1 .. * ]
+                              
+                              ligt­In: peilbesluitgebied
+                              
+                              Peilbesluit­Gebied
+                              [ 0 .. 1 ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Peilbesluit­Gebied
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte">Registratieve­Ruimte</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Peilbesluit­Gebied
+                              is specialisatie van
+                              
+                              IMWA_Geo­Object
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Een peilbesluit is een bestuurlijk besluit met betrekking op het te handhaven waterpeil
+                        of de te handhaven waterpeilen in een gebied. </p>
+                     </section>
+                  </section>
+               
                <section id="global_class_Watersysteem_Peilgebied">
                   <h5>   Peilgebied</h5>
                   
@@ -4079,6 +4239,241 @@
                      
                      <p>Een polder bevindt zich vaak lager dan het omliggende land of water.</p>
                      </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_ProfielverdedigingConstructie">
+                  <h5>   Profielverdediging­Constructie</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Profielverdediging­Constructie</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-ce844c85-3ff4-40fa-90d3-a06874687204
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een constructie die is aangelegd op de oever en/of op de waterbodem om erosie van
+                                 de oever en/of waterbodem te voorkomen</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een oeverconstructie in een punt, lijn of vlak</p>
+                              </td>
+                           <td>
+                              GM_Object
+                              </td>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Profielverdediging­Constructie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het type oeverbekleding dan aanwezig is bij een oever</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_ProfielverdedigingConstructieType">Profielverdediging­Constructie­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              afmeting­Constructie
+                              :</td>
+                           <td>
+                              
+                              <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
+                              </td>
+                           <td>
+                              Afmeting­Constructie
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              breedte­Constructie
+                              </td>
+                           <td>
+                              
+                              <p>de breedte van de constructie van een kunstwerk</p>
+                              </td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              diepte­Constructie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de diepte van een constructie ten opzichte van een verticale referentie</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#global_class_Watersysteem_WaardeMetVerticaleReferentie">Waarde­Met­Verticale­Referentie</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              hoogte­Conctructie
+                              </td>
+                           <td>
+                              
+                              <p>de hoogte van de constructie van een kunstwerk ten opzichte van een verticale referentie</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#global_class_Watersysteem_WaardeMetVerticaleReferentie">Waarde­Met­Verticale­Referentie</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lengte­Constructie
+                              </td>
+                           <td>
+                              
+                              <p>de lengte van de constructie van een kunstwerk</p>
+                              </td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Profielverdediging­Constructie
+                              [ 0 .. 1 ]
+                              
+                              ligt­Op: ligt­Op
+                              
+                              
+                              <a class="external-link" href="https://geonovum.github.io/IMGeo-objectenhandboek/ondersteunendwaterdeel">Ondersteunend­Waterdeel</a>
+                              
+                              [ 1 ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Oeverzone">Oeverzone</a>
+                              
+                              [ 1 .. * ]
+                              
+                              wordt­Verdedigd­Door: oeverzone
+                              
+                              Profielverdediging­Constructie
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Waterbodem">Waterbodem</a>
+                              
+                              [ 1 .. * ]
+                              
+                              wordt­Verdedigd­Door: waterbodemconstructie
+                              
+                              Profielverdediging­Constructie
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Profielverdediging­Constructie
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie">Constructie</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Profielverdediging­Constructie
+                              is specialisatie van
+                              
+                              IMWA_Geo­Object
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
                   </section>
                
                <section id="global_class_Watersysteem_Stroomgebied">
@@ -5784,166 +6179,6 @@
                      </section>
                   </section>
                
-               <section id="global_class_Watersysteem_PeilbesluitGebied">
-                  <h5>   Peilbesluit­Gebied</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Peilbesluit­Gebied</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-b5e11c28-c26e-54bd-8788-b51ddb6f2e91
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een registratieve ruimte waar een peilbesluit van toepassing is en waarin één of meerdere
-                                 peilgebieden zijn aangewezen</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een aanvoergebiedafvoergebied in een vlak</p>
-                              </td>
-                           <td>
-                              GM_Surface
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              naam
-                              </td>
-                           <td></td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Peilafwijkinggebied">Peilafwijkinggebied</a>
-                              
-                              [ 0 .. * ]
-                              
-                              ligt­In
-                              
-                              Peilbesluit­Gebied
-                              [ 0 .. 1 ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Peilgebied">Peilgebied</a>
-                              
-                              [ 1 .. * ]
-                              
-                              ligt­In: peilbesluitgebied
-                              
-                              Peilbesluit­Gebied
-                              [ 0 .. 1 ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Peilbesluit­Gebied
-                              is specialisatie van
-                              
-                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte">Registratieve­Ruimte</a>
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Peilbesluit­Gebied
-                              is specialisatie van
-                              
-                              IMWA_Geo­Object
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Een peilbesluit is een bestuurlijk besluit met betrekking op het te handhaven waterpeil
-                        of de te handhaven waterpeilen in een gebied. </p>
-                     </section>
-                  </section>
-               
                <section id="global_class_Watersysteem_Scheepvaartruimte">
                   <h5>   Scheepvaartruimte</h5>
                   
@@ -6102,201 +6337,6 @@
                      <h6>Toelichting  </h6>
                      
                      <p>Het gedeelte van het oppervlaktewater dat bestemd is voor scheepvaart in en over water.</p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_Waterbodem">
-                  <h5>   Waterbodem</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Waterbodem</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-ea8d6ccb-701c-4936-8f94-7881883394e4
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>het grondoppervlak dat bedekt wordt door oppervlaktewater exclusief de oeverzone</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Substraat
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het type substraat van een waterbodem</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_SubstraatType">Substraat­Type</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Waterbodem­Zone
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het type waterbodemzone</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_WaterbodemZoneType">Waterbodem­Zone­Type</a>
-                              </td>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              waterbodem­Begrenzingspeil
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het waterpeil waarbij de begrenzing van de waterbodem is bepaald</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#global_class_Watersysteem_WaardeMetVerticaleReferentie">Waarde­Met­Verticale­Referentie</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterbodem
-                              [ 1 .. * ]
-                              
-                              wordt­Verdedigd­Door: waterbodemconstructie
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_ProfielverdedigingConstructie">Profielverdediging­Constructie</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterbodem
-                              [ 1 .. * ]
-                              
-                              wordt­Ingedeeld­In: waterbodem
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_Biotoop">Biotoop</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterbodem
-                              [ 1 .. * ]
-                              
-                              is­Onderdeel­Van­Een: kaderrichtlijnoppervlaktewaterlichaam
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterOppervlaktewaterlichaam">Kaderrichtlijn­Water­Oppervlaktewaterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewaterlichaam">Oppervlaktewaterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              
-                              heeft­Onderdeel: waterbodem
-                              
-                              Waterbodem
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterbodem
-                              is specialisatie van
-                              
-                              <a class="link" href="#global_class_Watersysteem_Bodem">Bodem</a>
-                              
-                              </td>
-                           <td>
-                              
-                              <p>bovenste deel van de aarde, exclusief oppervlaktewater</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>De begrenzing van de waterbodem kan afhankelijk zijn van een bepaald waterpeil.</p>
                      </section>
                   </section>
                
@@ -6601,8 +6641,8 @@
                      </section>
                   </section>
                
-               <section id="global_class_Watersysteem_ProfielverdedigingConstructie">
-                  <h5>   Profielverdediging­Constructie</h5>
+               <section id="global_class_Watersysteem_Waterbodem">
+                  <h5>   Waterbodem</h5>
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -6610,12 +6650,12 @@
                      <tbody>
                         <tr>
                            <th scope="row">Naam</th>
-                           <td>Profielverdediging­Constructie</td>
+                           <td>Waterbodem</td>
                         </tr>
                         <tr>
                            <th scope="row">Herkomst</th>
                            <td>
-                              https://aquo.nl/index.php/Id-ce844c85-3ff4-40fa-90d3-a06874687204
+                              https://aquo.nl/index.php/Id-ea8d6ccb-701c-4936-8f94-7881883394e4
                               </td>
                         </tr>
                         <tr>
@@ -6623,8 +6663,7 @@
                            <td>
                               
                               
-                              <p>een constructie die is aangelegd op de oever en/of op de waterbodem om erosie van
-                                 de oever en/of waterbodem te voorkomen</p>
+                              <p>het grondoppervlak dat bedekt wordt door oppervlaktewater exclusief de oeverzone</p>
                               
                               </td>
                         </tr>
@@ -6665,92 +6704,40 @@
                         </tr>
                         <tr>
                            <td>
-                              geometrie
+                              type­Substraat
                               </td>
                            <td>
                               
-                              <p>specificeert de geometrie van een oeverconstructie in een punt, lijn of vlak</p>
+                              <p>specificeert het type substraat van een waterbodem</p>
                               </td>
                            <td>
-                              GM_Object
+                              <a class="link" href="#detail_class_AquoDomeintabellen_SubstraatType">Substraat­Type</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Waterbodem­Zone
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het type waterbodemzone</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_WaterbodemZoneType">Waterbodem­Zone­Type</a>
                               </td>
                            <td>0 .. *</td>
                         </tr>
                         <tr>
                            <td>
-                              type­Profielverdediging­Constructie
+                              waterbodem­Begrenzingspeil
                               </td>
                            <td>
                               
-                              <p>specificeert het type oeverbekleding dan aanwezig is bij een oever</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_ProfielverdedigingConstructieType">Profielverdediging­Constructie­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              afmeting­Constructie
-                              :</td>
-                           <td>
-                              
-                              <p>verwijst naar de gegevensgroep Afmeting­Constructie</p>
-                              </td>
-                           <td>
-                              Afmeting­Constructie
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              breedte­Constructie
-                              </td>
-                           <td>
-                              
-                              <p>de breedte van de constructie van een kunstwerk</p>
-                              </td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              diepte­Constructie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de diepte van een constructie ten opzichte van een verticale referentie</p>
+                              <p>specificeert het waterpeil waarbij de begrenzing van de waterbodem is bepaald</p>
                               </td>
                            <td>
                               <a class="link" href="#global_class_Watersysteem_WaardeMetVerticaleReferentie">Waarde­Met­Verticale­Referentie</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              hoogte­Conctructie
-                              </td>
-                           <td>
-                              
-                              <p>de hoogte van de constructie van een kunstwerk ten opzichte van een verticale referentie</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#global_class_Watersysteem_WaardeMetVerticaleReferentie">Waarde­Met­Verticale­Referentie</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              lengte­Constructie
-                              </td>
-                           <td>
-                              
-                              <p>de lengte van de constructie van een kunstwerk</p>
-                              </td>
-                           <td>
-                              Measure
                               </td>
                            <td>0 .. 1</td>
                         </tr>
@@ -6770,70 +6757,83 @@
                         </tr>
                         <tr>
                            <td>
-                              Profielverdediging­Constructie
-                              [ 0 .. 1 ]
-                              
-                              ligt­Op: ligt­Op
-                              
-                              
-                              <a class="external-link" href="https://geonovum.github.io/IMGeo-objectenhandboek/ondersteunendwaterdeel">Ondersteunend­Waterdeel</a>
-                              
-                              [ 1 ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Oeverzone">Oeverzone</a>
-                              
-                              [ 1 .. * ]
-                              
-                              wordt­Verdedigd­Door: oeverzone
-                              
-                              Profielverdediging­Constructie
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Waterbodem">Waterbodem</a>
-                              
+                              Waterbodem
                               [ 1 .. * ]
                               
                               wordt­Verdedigd­Door: waterbodemconstructie
                               
-                              Profielverdediging­Constructie
+                              
+                              <a class="link" href="#global_class_Watersysteem_ProfielverdedigingConstructie">Profielverdediging­Constructie</a>
+                              
                               [ 0 .. * ]
                               </td>
                            <td></td>
                         </tr>
                         <tr>
                            <td>
-                              Profielverdediging­Constructie
-                              is specialisatie van
+                              Waterbodem
+                              [ 1 .. * ]
                               
-                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie">Constructie</a>
+                              wordt­Ingedeeld­In: waterbodem
                               
+                              
+                              <a class="link" href="#global_class_Watersysteem_Biotoop">Biotoop</a>
+                              
+                              [ 0 .. * ]
                               </td>
                            <td></td>
                         </tr>
                         <tr>
                            <td>
-                              Profielverdediging­Constructie
-                              is specialisatie van
+                              Waterbodem
+                              [ 1 .. * ]
                               
-                              IMWA_Geo­Object
+                              is­Onderdeel­Van­Een: kaderrichtlijnoppervlaktewaterlichaam
                               
+                              
+                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterOppervlaktewaterlichaam">Kaderrichtlijn­Water­Oppervlaktewaterlichaam</a>
+                              
+                              [ 1 .. * ]
                               </td>
                            <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewaterlichaam">Oppervlaktewaterlichaam</a>
+                              
+                              [ 1 .. * ]
+                              
+                              heeft­Onderdeel: waterbodem
+                              
+                              Waterbodem
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Waterbodem
+                              is specialisatie van
+                              
+                              <a class="link" href="#global_class_Watersysteem_Bodem">Bodem</a>
+                              
+                              </td>
+                           <td>
+                              
+                              <p>bovenste deel van de aarde, exclusief oppervlaktewater</p>
+                              </td>
                         </tr>
                      </tbody>
                   </table>
                   
                   
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>De begrenzing van de waterbodem kan afhankelijk zijn van een bepaald waterpeil.</p>
+                     </section>
                   </section>
                
                <section id="global_class_Watersysteem_Waterverplaatsingsruimte">
@@ -8149,7 +8149,7 @@
       </section>
       <section id="lis" class="normative">
          <h2>Inhoud van waardelijsten</h2>
-         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-105404 imvertor Nightly-build.0-->
+         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-142447 imvertor Nightly-build.0-->
          <section>
             <h3>Codelijst inhoud   </h3>
             <section id="detail_class_AquoDomeintabellen_KRWDeelstroomgebiedsdistrict">
