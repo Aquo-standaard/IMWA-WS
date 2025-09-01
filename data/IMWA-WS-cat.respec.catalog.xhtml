@@ -2,7 +2,7 @@
    <body>
       <section id="cat" class="normative">
          <h2>Gegevensdefinitie</h2>
-         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-142447 imvertor Nightly-build.0-->
+         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-143239 imvertor Nightly-build.0-->
          <section id="global_package_Watersysteem">
             <h3>Domein   Watersysteem</h3>
             <div class="imageinfo overview">
@@ -1825,6 +1825,170 @@
                   
                   </section>
                
+               <section id="global_class_Watersysteem_KaderrichtlijnWaterBeschermdGebied">
+                  <h5>   Kaderrichtlijn­Water­Beschermd­Gebied</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Kaderrichtlijn­Water­Beschermd­Gebied</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Begrip aan te maken
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een gebied aangewezen vanuit wet- en regelgeving waar regels gelden over activiteiten
+                                 die negatieve gevolgen hebben of kunnen hebben op de gebruiksfunctie(s) van het gebied
+                                 en waarbinnen beschermende maatregelen genomen moeten worden</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een beschermd gebied in een punt, lijn of vlak</p>
+                              </td>
+                           <td>
+                              GM_Object
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­KRWBeschermd­Gebied
+                              </td>
+                           <td>
+                              
+                              <p>specificeert vanuit welke communautaire wetgeving het gebied bescherming behoeft</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_KRWBeschermdGebiedType">KRWBeschermd­Gebied­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterWaterlichaam">Kaderrichtlijn­Water­Waterlichaam</a>
+                              
+                              [ 1 .. * ]
+                              
+                              Is­Aangewezen­Als: beschermdgebied
+                              
+                              Kaderrichtlijn­Water­Beschermd­Gebied
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterWaterlichaam">Kaderrichtlijn­Water­Waterlichaam</a>
+                              
+                              [ 1 .. * ]
+                              
+                              heeft­Interactie­Met: beschermdgebied
+                              
+                              Kaderrichtlijn­Water­Beschermd­Gebied
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Kaderrichtlijn­Water­Beschermd­Gebied
+                              is specialisatie van
+                              
+                              IMWA_Geo­Object
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Kaderrichtlijn­Water­Beschermd­Gebied
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte">Registratieve­Ruimte</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>De waterbeheerder treft in dit gebied maatregelen om te voldoen aan de vastgestelde
+                        omgevingswaarde.</p>
+                     </section>
+                  </section>
+               
                <section id="global_class_Watersysteem_KaderrichtlijnWaterGrondwaterlichaam">
                   <h5>   Kaderrichtlijn­Water­Grondwaterlichaam</h5>
                   
@@ -3341,6 +3505,421 @@
                   
                   </section>
                
+               <section id="global_class_Watersysteem_Oeverzone">
+                  <h5>   Oeverzone</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Oeverzone</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-2920cdd0-81c9-4a54-a64a-d082423bf680
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een land-water overgang waarbij de overgang tussen oppervlaktewater en het naastgelegen
+                                 land geen harde scheidslijn is, maar een smal gebied</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een oeverzone in een vlak</p>
+                              </td>
+                           <td>
+                              GM_Surface
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Oever
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het type oever</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_OeverType">Oever­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Oever­Inrichting
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de type inrichting van een oever</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_OeverInrichtingType">Oever­Inrichting­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oeverzone
+                              [ 1 .. * ]
+                              
+                              wordt­Verdedigd­Door: oeverzone
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_ProfielverdedigingConstructie">Profielverdediging­Constructie</a>
+                              
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oeverzone
+                              is specialisatie van
+                              
+                              IMWA_Geo­Object
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oeverzone
+                              is specialisatie van
+                              
+                              <a class="link" href="#global_class_Watersysteem_LandWaterOvergang">Land­Water­Overgang</a>
+                              
+                              </td>
+                           <td>
+                              
+                              <p>een geografische ruimte die de overgang tussen land en oppervlaktewater vormt</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Een oeverzone ligt deels onder water en deels boven water. </p>
+                     </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_Oppervlaktewater">
+                  <h5>   Oppervlaktewater</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Oppervlaktewater</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-a87236c5-3703-4902-ab55-fe3b60019d3b
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>het water dat zich in vloeibare vorm aan het aardoppervlak bevindt</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              naar NEN3610:2022
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een oppervlaktewater in een lijn of vlak</p>
+                              </td>
+                           <td>
+                              Lijn­Of­Vlak
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              naam
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de naam van een oppervlaktewater</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Oppervlaktewater
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het type oppervlaktewater</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_OppervlaktewaterType">Oppervlaktewater­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              
+                              is­Schematisatie­Van: oppervlaktewater
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewatersegment">Oppervlaktewatersegment</a>
+                              
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              
+                              bevat: oppervlaktewater
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_Waterverplaatsingsruimte">Waterverplaatsingsruimte</a>
+                              
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              
+                              bevat: oppervlaktewater
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_Scheepvaartruimte">Scheepvaartruimte</a>
+                              
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              
+                              wordt­Ingedeeld­In: oppervlaktewater
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_Biotoop">Biotoop</a>
+                              
+                              [ 0 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Afwateringsgebied">Afwateringsgebied</a>
+                              
+                              [ 1 .. * ]
+                              
+                              watert­Af­Op: afvoeraanvoergebied
+                              
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterOppervlaktewaterlichaam">Kaderrichtlijn­Water­Oppervlaktewaterlichaam</a>
+                              
+                              [ 1 .. * ]
+                              
+                              heeft­Onderdeel: oppervlaktewater
+                              
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewaterlichaam">Oppervlaktewaterlichaam</a>
+                              
+                              [ 1 .. * ]
+                              
+                              heeft­Onderdeel: oppervlaktewater
+                              
+                              Oppervlaktewater
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              is specialisatie van
+                              
+                              IMWA_Geo­Object
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/oppervlaktewater">Oppervlaktewater</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>De aanduiding 'in vloeibare vorm' is toegevoegd om aan te geven dat water in vaste
+                        vorm (zoals in gletsjers, permanente ijskap ) of in gas vorm (zoals in mist, regen
+                        of wolken), over het algemeen niet beschouwd wordt als oppervlaktewater. Er zijn wel
+                        situaties waarin dit vraagtekens oproept. Bijvoorbeeld voor regenplassen. Regenplassen
+                        voldoen aan de definitie, maar worden in het algemeen niet beschouwd als oppervlaktewater,
+                        omdat deze van tijdelijke aard zijn. Een tijdelijke bevroren meer of rivier voldoet
+                        niet aan de definitie, maar wordt in het algemeen wel beschouwd als oppervlaktewater.
+                        </p>
+                     </section>
+                  </section>
+               
                <section id="global_class_Watersysteem_OppervlaktewaterKruising">
                   <h5>   Oppervlaktewater­Kruising</h5>
                   
@@ -3520,6 +4099,235 @@
                         zonder dat er in de werkelijkheid het water elkaar raakt, bijvoorbeeld bovenlangs
                         door een aquaduct of onderlangs door een duiker. Er is vrijwel altijd een kunstwerk
                         nodig om een kruising mogelijk te maken.</p>
+                     </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_OppervlaktewaterKnooppunt">
+                  <h5>   Oppervlaktewater­Knooppunt</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Oppervlaktewater­Knooppunt</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een punt binnen een hydrologisch netwerk</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              begin­Leven­Versie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object werd
+                                 toegevoegd of veranderd in een ruimterlijke data set</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Date­Time</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              categorie­Oppervlaktewater­Knooppunt
+                              </td>
+                           <td>
+                              
+                              <p>specificeert in welke categorie een oppervlaktewater knoopunt valt</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_OppervlaktewaterknooppuntCategorie">Oppervlaktewaterknooppunt­Categorie</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              einde­Leven­Versie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object is opgeschort
+                                 of de status historisch heeft ontvangen</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Date­Time</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              geografische­Naam
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geografische naam die wordt gebruikt om een hydro object te indentificeren
+                                 in de echte wereld</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een oppervlaktewater knooppunt in een punt</p>
+                              </td>
+                           <td>
+                              GM_Point
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              inspire­Id
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het externe ID van een ruimtelijk object</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              hydro­Id
+                              :</td>
+                           <td>
+                              
+                              <p>verwijst naar de gegevensgroep hydro­Identifier</p>
+                              </td>
+                           <td>
+                              Hydro­Identifier
+                              </td>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              classificatie­Schema
+                              </td>
+                           <td>
+                              
+                              <p>specificeert welk identificatie schema wordt gebruikt</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lokaald
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het lokale ID die een waterbeheerder heeft toegekend aan een object</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              naam
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de scope van een lokaal ID</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewater­Knooppunt
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://inspire.ec.europa.eu/featureconcept/HydroNode">Hydro­Node</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Een punt kan het begin of het einde van een oppervlaktewater segement representeren.
+                        Het punt kan ook een knooppunt representeren, waarbij meerdere oppervlaktewater segementen
+                        met elkaar in verbinding staan. Dit knooppunt kan worden gevormd door een (peilregulerend)
+                        kunstwerk.</p>
                      </section>
                   </section>
                
@@ -3757,6 +4565,267 @@
                      <p>Het gaat hier om een definitie afkomstig uit de omgevingswet. Binnen IMWA is oppervlaktewaterlichaam
                         vanuit het perspectief van de Omgevingswet een waterstaatswerk en daarmee een juridische
                         ruimte.</p>
+                     </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_Oppervlaktewatersegment">
+                  <h5>   Oppervlaktewatersegment</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Oppervlaktewatersegment</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Begrip aan te maken
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een segment van een oppervlaktewater in een hydrologisch netwerk</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              naar INSPIRE
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              geografische­Naam
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geografische naam die wordt gebruikt om een hydro object te indentificeren
+                                 in de echte wereld</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              geometrie
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de geometrie van een oppervlaktewatersegment in een lijn</p>
+                              </td>
+                           <td>
+                              GM_Curve
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              indicatie­Fictief
+                              </td>
+                           <td>
+                              
+                              <p>specificeert of een oppervlaktewatersegment fictief is of niet</p>
+                              </td>
+                           <td>
+                              BOOLEAN
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              lengte
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de lengte van een oppervlaktewater segment</p>
+                              </td>
+                           <td>
+                              Measure
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              stroomrichting
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de stroomrichting van een oppervlaktewater segment ten opzichte van de
+                                 richting waarin het segement gedigitaliseerd is</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_Stroomrichting">Stroomrichting</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              hydro­Id
+                              :</td>
+                           <td>
+                              
+                              <p>verwijst naar de gegevensgroep hydro­Identifier</p>
+                              </td>
+                           <td>
+                              Hydro­Identifier
+                              </td>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              classificatie­Schema
+                              </td>
+                           <td>
+                              
+                              <p>specificeert welk identificatie schema wordt gebruikt</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              lokaald
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het lokale ID die een waterbeheerder heeft toegekend aan een object</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>- 
+                              naam
+                              </td>
+                           <td>
+                              
+                              <p>specificeert de scope van een lokaal ID</p>
+                              </td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Afwateringsgebied">Afwateringsgebied</a>
+                              
+                              [ 1 .. * ]
+                              
+                              watert­Af­Op
+                              
+                              Oppervlaktewatersegment
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewater">Oppervlaktewater</a>
+                              
+                              [ 1 .. * ]
+                              
+                              is­Schematisatie­Van: oppervlaktewater
+                              
+                              Oppervlaktewatersegment
+                              [ 1 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              
+                              <a class="link" href="#global_class_Watersysteem_OppervlaktewaterKruising">Oppervlaktewater­Kruising</a>
+                              
+                              [ 0 .. * ]
+                              
+                              bestaat­Uit: oppervlaktewatersegment
+                              
+                              Oppervlaktewatersegment
+                              [ 2 .. * ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Oppervlaktewatersegment
+                              is specialisatie van
+                              
+                              <a class="external-link" href="http://inspire.ec.europa.eu/featureconcept/WatercourseLink">Watercourse­Link</a>
+                              
+                              </td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Een segment kan een representatie zijn van oppervlaktewater in de werkelijkheid. Een
+                        segment kan ook virtueel zijn. Een virtueel segment wordt gebruikt om een hydrologische
+                        netwerk sluitend te maken. Bijvoorbeeld, het IJsselmeer repersenteren met meerdere
+                        segmenten om de op het IJsselmeer uitkomende wateren met elkaar te kunnen verbinden.</p>
                      </section>
                   </section>
                
@@ -4817,1368 +5886,6 @@
                   
                   </section>
                
-               <section id="global_class_Watersysteem_WaterstaatkundigeZone">
-                  <h5>   Waterstaatkundige­Zone</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Waterstaatkundige­Zone</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-e85e56d6-da80-4635-8169-e53fdd3daa65
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een waterstaatkundig gebied op of rond een waterstaatswerk, inclusief de daarbij/daarin
-                                 gelegen ondersteunende kunstwerken die zijn vastgelegd in een verordening</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Waterstaatkundige­Zone
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het type waterstaatkundige zone rondom of op een oppervlaktewaterlichaam,
-                                 waterbergingsgebied of waterkering inclusief daarbij gelegen kunstwerken</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_WaterstaatkundigeZoneType">Waterstaatkundige­Zone­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterstaatkundige­Zone
-                              is specialisatie van
-                              
-                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
-                              
-                              </td>
-                           <td>
-                              
-                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
-                                 doeleinden toebedeeld heeft gekregen</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Er zijn verschillende typen waterstaatkundige zones die op elkaar kunnen aansluiten
-                        en samen de waterstaatkundige zonering vormen.</p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_WaterstaatkundigGebied">
-                  <h5>   Waterstaatkundig­Gebied</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Waterstaatkundig­Gebied</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-e85e56d6-da80-4635-8169-e53fdd3daa65
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
-                                 doeleinden toebedeeld heeft gekregen</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Ja</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterstaatkundig­Gebied
-                              [ 1 ]
-                              
-                              heeft­Ruimtelijke­Relatie­Met­Andere
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
-                              
-                              [ 1 ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterstaatkundig­Gebied
-                              is specialisatie van
-                              
-                              <a class="link" href="#global_class_Watersysteem_JuridischeRuimte">Juridische­Ruimte</a>
-                              
-                              </td>
-                           <td>
-                              
-                              <p>een gebied waar een bepaald beleid of regelgeving van toepassing is</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  </section>
-               
-               <section id="global_class_Watersysteem_Waterstaatswerk">
-                  <h5>   Waterstaatswerk</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Waterstaatswerk</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-24d88ffb-09a9-4c92-9e00-974270ccb241
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een waterstaatkundig gebied waarbinnen de objecten liggen die het hoofdonderwerp vormen
-                                 van watersysteembeheer en/of waterveiligheidsbeheer</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Ja</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Waterstaatswerk
-                              is specialisatie van
-                              
-                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
-                              
-                              </td>
-                           <td>
-                              
-                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
-                                 doeleinden toebedeeld heeft gekregen</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Binnen de Omgevingswet worden oppervlaktewaterlichaam, bergingsgebied, waterkering
-                        met de daarbij behorende ondersteunende kunstwerken waterstaatswerken genoemd.</p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_KaderrichtlijnWaterBeschermdGebied">
-                  <h5>   Kaderrichtlijn­Water­Beschermd­Gebied</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Kaderrichtlijn­Water­Beschermd­Gebied</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Begrip aan te maken
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een gebied aangewezen vanuit wet- en regelgeving waar regels gelden over activiteiten
-                                 die negatieve gevolgen hebben of kunnen hebben op de gebruiksfunctie(s) van het gebied
-                                 en waarbinnen beschermende maatregelen genomen moeten worden</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een beschermd gebied in een punt, lijn of vlak</p>
-                              </td>
-                           <td>
-                              GM_Object
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­KRWBeschermd­Gebied
-                              </td>
-                           <td>
-                              
-                              <p>specificeert vanuit welke communautaire wetgeving het gebied bescherming behoeft</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_KRWBeschermdGebiedType">KRWBeschermd­Gebied­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterWaterlichaam">Kaderrichtlijn­Water­Waterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              
-                              Is­Aangewezen­Als: beschermdgebied
-                              
-                              Kaderrichtlijn­Water­Beschermd­Gebied
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterWaterlichaam">Kaderrichtlijn­Water­Waterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              
-                              heeft­Interactie­Met: beschermdgebied
-                              
-                              Kaderrichtlijn­Water­Beschermd­Gebied
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Kaderrichtlijn­Water­Beschermd­Gebied
-                              is specialisatie van
-                              
-                              IMWA_Geo­Object
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Kaderrichtlijn­Water­Beschermd­Gebied
-                              is specialisatie van
-                              
-                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte">Registratieve­Ruimte</a>
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>De waterbeheerder treft in dit gebied maatregelen om te voldoen aan de vastgestelde
-                        omgevingswaarde.</p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_Oeverzone">
-                  <h5>   Oeverzone</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Oeverzone</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-2920cdd0-81c9-4a54-a64a-d082423bf680
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een land-water overgang waarbij de overgang tussen oppervlaktewater en het naastgelegen
-                                 land geen harde scheidslijn is, maar een smal gebied</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              Aquo
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een oeverzone in een vlak</p>
-                              </td>
-                           <td>
-                              GM_Surface
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Oever
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het type oever</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_OeverType">Oever­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Oever­Inrichting
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de type inrichting van een oever</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_OeverInrichtingType">Oever­Inrichting­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oeverzone
-                              [ 1 .. * ]
-                              
-                              wordt­Verdedigd­Door: oeverzone
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_ProfielverdedigingConstructie">Profielverdediging­Constructie</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oeverzone
-                              is specialisatie van
-                              
-                              IMWA_Geo­Object
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oeverzone
-                              is specialisatie van
-                              
-                              <a class="link" href="#global_class_Watersysteem_LandWaterOvergang">Land­Water­Overgang</a>
-                              
-                              </td>
-                           <td>
-                              
-                              <p>een geografische ruimte die de overgang tussen land en oppervlaktewater vormt</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Een oeverzone ligt deels onder water en deels boven water. </p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_Oppervlaktewater">
-                  <h5>   Oppervlaktewater</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Oppervlaktewater</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Id-a87236c5-3703-4902-ab55-fe3b60019d3b
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>het water dat zich in vloeibare vorm aan het aardoppervlak bevindt</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              naar NEN3610:2022
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een oppervlaktewater in een lijn of vlak</p>
-                              </td>
-                           <td>
-                              Lijn­Of­Vlak
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              naam
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de naam van een oppervlaktewater</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              type­Oppervlaktewater
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het type oppervlaktewater</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_OppervlaktewaterType">Oppervlaktewater­Type</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              
-                              is­Schematisatie­Van: oppervlaktewater
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewatersegment">Oppervlaktewatersegment</a>
-                              
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              
-                              bevat: oppervlaktewater
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_Waterverplaatsingsruimte">Waterverplaatsingsruimte</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              
-                              bevat: oppervlaktewater
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_Scheepvaartruimte">Scheepvaartruimte</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              
-                              wordt­Ingedeeld­In: oppervlaktewater
-                              
-                              
-                              <a class="link" href="#global_class_Watersysteem_Biotoop">Biotoop</a>
-                              
-                              [ 0 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Afwateringsgebied">Afwateringsgebied</a>
-                              
-                              [ 1 .. * ]
-                              
-                              watert­Af­Op: afvoeraanvoergebied
-                              
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_KaderrichtlijnWaterOppervlaktewaterlichaam">Kaderrichtlijn­Water­Oppervlaktewaterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              
-                              heeft­Onderdeel: oppervlaktewater
-                              
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewaterlichaam">Oppervlaktewaterlichaam</a>
-                              
-                              [ 1 .. * ]
-                              
-                              heeft­Onderdeel: oppervlaktewater
-                              
-                              Oppervlaktewater
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              is specialisatie van
-                              
-                              IMWA_Geo­Object
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater
-                              is specialisatie van
-                              
-                              <a class="external-link" href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/oppervlaktewater">Oppervlaktewater</a>
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>De aanduiding 'in vloeibare vorm' is toegevoegd om aan te geven dat water in vaste
-                        vorm (zoals in gletsjers, permanente ijskap ) of in gas vorm (zoals in mist, regen
-                        of wolken), over het algemeen niet beschouwd wordt als oppervlaktewater. Er zijn wel
-                        situaties waarin dit vraagtekens oproept. Bijvoorbeeld voor regenplassen. Regenplassen
-                        voldoen aan de definitie, maar worden in het algemeen niet beschouwd als oppervlaktewater,
-                        omdat deze van tijdelijke aard zijn. Een tijdelijke bevroren meer of rivier voldoet
-                        niet aan de definitie, maar wordt in het algemeen wel beschouwd als oppervlaktewater.
-                        </p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_Oppervlaktewatersegment">
-                  <h5>   Oppervlaktewatersegment</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Oppervlaktewatersegment</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td>
-                              https://aquo.nl/index.php/Begrip aan te maken
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een segment van een oppervlaktewater in een hydrologisch netwerk</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td>
-                              naar INSPIRE
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              geografische­Naam
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geografische naam die wordt gebruikt om een hydro object te indentificeren
-                                 in de echte wereld</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een oppervlaktewatersegment in een lijn</p>
-                              </td>
-                           <td>
-                              GM_Curve
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              indicatie­Fictief
-                              </td>
-                           <td>
-                              
-                              <p>specificeert of een oppervlaktewatersegment fictief is of niet</p>
-                              </td>
-                           <td>
-                              BOOLEAN
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              lengte
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de lengte van een oppervlaktewater segment</p>
-                              </td>
-                           <td>
-                              Measure
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              stroomrichting
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de stroomrichting van een oppervlaktewater segment ten opzichte van de
-                                 richting waarin het segement gedigitaliseerd is</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_Stroomrichting">Stroomrichting</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              hydro­Id
-                              :</td>
-                           <td>
-                              
-                              <p>verwijst naar de gegevensgroep hydro­Identifier</p>
-                              </td>
-                           <td>
-                              Hydro­Identifier
-                              </td>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              classificatie­Schema
-                              </td>
-                           <td>
-                              
-                              <p>specificeert welk identificatie schema wordt gebruikt</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              lokaald
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het lokale ID die een waterbeheerder heeft toegekend aan een object</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              naam
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de scope van een lokaal ID</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Afwateringsgebied">Afwateringsgebied</a>
-                              
-                              [ 1 .. * ]
-                              
-                              watert­Af­Op
-                              
-                              Oppervlaktewatersegment
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_OppervlaktewaterKruising">Oppervlaktewater­Kruising</a>
-                              
-                              [ 0 .. * ]
-                              
-                              bestaat­Uit: oppervlaktewatersegment
-                              
-                              Oppervlaktewatersegment
-                              [ 2 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              
-                              <a class="link" href="#global_class_Watersysteem_Oppervlaktewater">Oppervlaktewater</a>
-                              
-                              [ 1 .. * ]
-                              
-                              is­Schematisatie­Van: oppervlaktewater
-                              
-                              Oppervlaktewatersegment
-                              [ 1 .. * ]
-                              </td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewatersegment
-                              is specialisatie van
-                              
-                              <a class="external-link" href="http://inspire.ec.europa.eu/featureconcept/WatercourseLink">Watercourse­Link</a>
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Een segment kan een representatie zijn van oppervlaktewater in de werkelijkheid. Een
-                        segment kan ook virtueel zijn. Een virtueel segment wordt gebruikt om een hydrologische
-                        netwerk sluitend te maken. Bijvoorbeeld, het IJsselmeer repersenteren met meerdere
-                        segmenten om de op het IJsselmeer uitkomende wateren met elkaar te kunnen verbinden.</p>
-                     </section>
-                  </section>
-               
-               <section id="global_class_Watersysteem_OppervlaktewaterKnooppunt">
-                  <h5>   Oppervlaktewater­Knooppunt</h5>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="row">Naam</th>
-                           <td>Oppervlaktewater­Knooppunt</td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Definitie</th>
-                           <td>
-                              
-                              
-                              <p>een punt binnen een hydrologisch netwerk</p>
-                              
-                              </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Herkomst definitie</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Datum opname</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Unieke aanduiding</th>
-                           <td> </td>
-                        </tr>
-                        <tr>
-                           <th scope="row">Indicatie abstract object</th>
-                           <td>Nee</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <h6>Overzicht attributen  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <colgroup style="width: 10%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Attribuutnaam</th>
-                           <th scope="col">Definitie</th>
-                           <th scope="col">Attribuuttype</th>
-                           <th scope="col">Kardinaliteit</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              begin­Leven­Versie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object werd
-                                 toegevoegd of veranderd in een ruimterlijke data set</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Date­Time</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              categorie­Oppervlaktewater­Knooppunt
-                              </td>
-                           <td>
-                              
-                              <p>specificeert in welke categorie een oppervlaktewater knoopunt valt</p>
-                              </td>
-                           <td>
-                              <a class="link" href="#detail_class_AquoDomeintabellen_OppervlaktewaterknooppuntCategorie">Oppervlaktewaterknooppunt­Categorie</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              einde­Leven­Versie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de datum en tijd wanneer deze versie van het ruimtelijke object is opgeschort
-                                 of de status historisch heeft ontvangen</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Date­Time</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              geografische­Naam
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geografische naam die wordt gebruikt om een hydro object te indentificeren
-                                 in de echte wereld</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              geometrie
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de geometrie van een oppervlaktewater knooppunt in een punt</p>
-                              </td>
-                           <td>
-                              GM_Point
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              inspire­Id
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het externe ID van een ruimtelijk object</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              hydro­Id
-                              :</td>
-                           <td>
-                              
-                              <p>verwijst naar de gegevensgroep hydro­Identifier</p>
-                              </td>
-                           <td>
-                              Hydro­Identifier
-                              </td>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              classificatie­Schema
-                              </td>
-                           <td>
-                              
-                              <p>specificeert welk identificatie schema wordt gebruikt</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              lokaald
-                              </td>
-                           <td>
-                              
-                              <p>specificeert het lokale ID die een waterbeheerder heeft toegekend aan een object</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <td>- 
-                              naam
-                              </td>
-                           <td>
-                              
-                              <p>specificeert de scope van een lokaal ID</p>
-                              </td>
-                           <td>
-                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20240408/#primitive-datatypes">Character­String</a>
-                              </td>
-                           <td>1</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  <h6>Overzicht relaties  </h6>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 50%;"></colgroup>
-                     <colgroup style="width: 50%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th scope="col">Relatienaam met kardinaliteiten</th>
-                           <th scope="col">Definitie</th>
-                        </tr>
-                        <tr>
-                           <td>
-                              Oppervlaktewater­Knooppunt
-                              is specialisatie van
-                              
-                              <a class="external-link" href="http://inspire.ec.europa.eu/featureconcept/HydroNode">Hydro­Node</a>
-                              
-                              </td>
-                           <td></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  
-                  
-                  <section class="notoc">
-                     <h6>Toelichting  </h6>
-                     
-                     <p>Een punt kan het begin of het einde van een oppervlaktewater segement representeren.
-                        Het punt kan ook een knooppunt representeren, waarbij meerdere oppervlaktewater segementen
-                        met elkaar in verbinding staan. Dit knooppunt kan worden gevormd door een (peilregulerend)
-                        kunstwerk.</p>
-                     </section>
-                  </section>
-               
                <section id="global_class_Watersysteem_Scheepvaartruimte">
                   <h5>   Scheepvaartruimte</h5>
                   
@@ -6833,6 +6540,299 @@
                      <h6>Toelichting  </h6>
                      
                      <p>De begrenzing van de waterbodem kan afhankelijk zijn van een bepaald waterpeil.</p>
+                     </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_WaterstaatkundigeZone">
+                  <h5>   Waterstaatkundige­Zone</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Waterstaatkundige­Zone</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-e85e56d6-da80-4635-8169-e53fdd3daa65
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een waterstaatkundig gebied op of rond een waterstaatswerk, inclusief de daarbij/daarin
+                                 gelegen ondersteunende kunstwerken die zijn vastgelegd in een verordening</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Nee</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht attributen  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Attribuutnaam</th>
+                           <th scope="col">Definitie</th>
+                           <th scope="col">Attribuuttype</th>
+                           <th scope="col">Kardinaliteit</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              type­Waterstaatkundige­Zone
+                              </td>
+                           <td>
+                              
+                              <p>specificeert het type waterstaatkundige zone rondom of op een oppervlaktewaterlichaam,
+                                 waterbergingsgebied of waterkering inclusief daarbij gelegen kunstwerken</p>
+                              </td>
+                           <td>
+                              <a class="link" href="#detail_class_AquoDomeintabellen_WaterstaatkundigeZoneType">Waterstaatkundige­Zone­Type</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Waterstaatkundige­Zone
+                              is specialisatie van
+                              
+                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
+                              
+                              </td>
+                           <td>
+                              
+                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
+                                 doeleinden toebedeeld heeft gekregen</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Er zijn verschillende typen waterstaatkundige zones die op elkaar kunnen aansluiten
+                        en samen de waterstaatkundige zonering vormen.</p>
+                     </section>
+                  </section>
+               
+               <section id="global_class_Watersysteem_WaterstaatkundigGebied">
+                  <h5>   Waterstaatkundig­Gebied</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Waterstaatkundig­Gebied</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-e85e56d6-da80-4635-8169-e53fdd3daa65
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
+                                 doeleinden toebedeeld heeft gekregen</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Ja</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Waterstaatkundig­Gebied
+                              [ 1 ]
+                              
+                              heeft­Ruimtelijke­Relatie­Met­Andere
+                              
+                              
+                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
+                              
+                              [ 1 ]
+                              </td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              Waterstaatkundig­Gebied
+                              is specialisatie van
+                              
+                              <a class="link" href="#global_class_Watersysteem_JuridischeRuimte">Juridische­Ruimte</a>
+                              
+                              </td>
+                           <td>
+                              
+                              <p>een gebied waar een bepaald beleid of regelgeving van toepassing is</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  </section>
+               
+               <section id="global_class_Watersysteem_Waterstaatswerk">
+                  <h5>   Waterstaatswerk</h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="row">Naam</th>
+                           <td>Waterstaatswerk</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst</th>
+                           <td>
+                              https://aquo.nl/index.php/Id-24d88ffb-09a9-4c92-9e00-974270ccb241
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Definitie</th>
+                           <td>
+                              
+                              
+                              <p>een waterstaatkundig gebied waarbinnen de objecten liggen die het hoofdonderwerp vormen
+                                 van watersysteembeheer en/of waterveiligheidsbeheer</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Herkomst definitie</th>
+                           <td>
+                              Aquo
+                              </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Datum opname</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Unieke aanduiding</th>
+                           <td> </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Indicatie abstract object</th>
+                           <td>Ja</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <h6>Overzicht relaties  </h6>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th scope="col">Relatienaam met kardinaliteiten</th>
+                           <th scope="col">Definitie</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              Waterstaatswerk
+                              is specialisatie van
+                              
+                              <a class="link" href="#global_class_Watersysteem_WaterstaatkundigGebied">Waterstaatkundig­Gebied</a>
+                              
+                              </td>
+                           <td>
+                              
+                              <p>een juridische ruimte dat binnen de Omgevingswet een functie voor waterstaatkundige
+                                 doeleinden toebedeeld heeft gekregen</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  
+                  
+                  <section class="notoc">
+                     <h6>Toelichting  </h6>
+                     
+                     <p>Binnen de Omgevingswet worden oppervlaktewaterlichaam, bergingsgebied, waterkering
+                        met de daarbij behorende ondersteunende kunstwerken waterstaatswerken genoemd.</p>
                      </section>
                   </section>
                
@@ -8149,7 +8149,7 @@
       </section>
       <section id="lis" class="normative">
          <h2>Inhoud van waardelijsten</h2>
-         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-142447 imvertor Nightly-build.0-->
+         <!--CONCEPTUAL-IMWA2024Watersysteem-2024.0.0-1-20231026-20250901-143239 imvertor Nightly-build.0-->
          <section>
             <h3>Codelijst inhoud   </h3>
             <section id="detail_class_AquoDomeintabellen_KRWDeelstroomgebiedsdistrict">
