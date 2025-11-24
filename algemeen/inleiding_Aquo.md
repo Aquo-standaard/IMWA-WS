@@ -21,6 +21,11 @@ Ieder van deze genoemde onderdelen heeft een connectie met IMWA Basis. IMWA Basi
 
 In de onderstaande afbeelding is een (voorlopige) weergave te zien van IMWA en de samenhang tussen de verschillende onderdelen binnen IMWA. Let op! Dit is nog niet de definitieve versie van IMWA en is onderheven aan veranderingen die tot stand komen door de verdere doorontwikkeling van IMWA.
 
+![De context van IMWA](./algemeen/Bedrijfsobjecten%20model.jpg)
+*Totaalplaat van IMWA in samenhang*
+
+Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis: [Catalogus IMWA Basis](https://aquo-standaard.github.io/IMWA-basis/#cat)
+
 ## MIM-conform
 
 De Aquo-informatiemodellen zijn opgezet volgens het **MIM - Metamodel Informatie Modellering** ([geostandaarden.nl](https://docs.geostandaarden.nl/mim/mim/)). MIM biedt een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen. De afspraken reiken over de grenzen van bestuurslagen heen en zijn toepasbaar in uiteenlopende domeinen. Het volgen van MIM zorgt er ook voor dat er een gelaagdheid is aangebracht in de informatiemodellen
