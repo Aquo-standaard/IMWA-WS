@@ -38,4 +38,3 @@ Zie voor verdere toelichting:
 [Metamodel Informatie Modellering](https://docs.geostandaarden.nl/mim/mim/)
 
 De Aquo-informatiemodellen zijn gemodelleerd met behulp van **UML (Unified Modeling Language)** in **Enterprise Architect**.
-De Aquo-informatiemodellen zijn gemodelleerd met behulp van **UML (Unified Modeling Language)** in **Enterprise Architect**.
