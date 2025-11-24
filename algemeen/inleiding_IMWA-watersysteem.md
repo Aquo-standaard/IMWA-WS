@@ -17,7 +17,7 @@ Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen i
 
 ## IMWA Watersysteem
 
-Er kan op verschillende manieren (perspectieven) naar een watersysteem gekeken worden. Hoe naar het watersysteem gekeken wordt, is afhankelijk van het werkveld of interesse van een persoon. Het perspectief op het watersysteem bepaald welke informatie gewenst is. En tussen verschillende perspectieven zit vaak een nuancering in informatiebehoefte. In IMWA Watersysteem zijn daarom 4 perspectieven verwerkt:
+Een watersteem kan op verschillende manieren worden bekeken afhankelijk van de interesse die een waterbeheerder heeft.  Hoe naar het watersysteem gekeken wordt, is afhankelijk van het thema en de uitdagingen die de waterbeheerder hierin tegenkomt. IMWA Watersysteem is één van de domeinen binnen IMWA, waarbinnen de verschillende manieren van beschouwen van een watersysteem gemodelleerd is. Voor het overzicht hebben wij watersysteem onderverdeeld in een aantal perspectieven die voor de waterbeheerder herkenbaar zijn. Een perspectief zet de objecten bij elkaar die van belang kunnen zijn voor dat perspectief. Deze perspectieven zijn enkel weergaven om het domein Watersysteem overzichtelijker te maken en geen strikte indelingen! Als er behoefte is om ook andere perspectieven en/of andere weergaven te maken dan is dit altijd mogelijk.
 
 - Geografie - de ligging en karakterisering van objecten
 - Beleid - het beleid dat wordt toegepast(zoals Kaderrichtlijn Water, peilbeheer)
