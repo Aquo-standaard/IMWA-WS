@@ -1,21 +1,4 @@
-# Het informatiemodel Water (IMWA)
-
-De basis van de Aquo-standaard (Aquo) wordt gevormd door het informatiemodel Water (IMWA). IMWA biedt de basis voor de informatiestructuur die binnen de gegevensuitwisseling wordt gebruikt. Dit betekend dat binnen IMWA de relevante objecten, onderlinge relaties tussen objecten en eigenschappen over objecten die worden gebruikt binnen het waterbeheer beschrijft.
-
-IMWA is een omvangrijk model en is daarom voor de overzichtelijkheid onderverdeeld in een aantal onderdelen die ieder een taak van de waterbeheerder representeren. Dit zijn: watersysteem, waterketen en waterveiligheid.
-
-Naast de drie taken van de waterbeheerder, zijn er binnen IMWA nog een aantal andere onderdelen gemodelleerd die gebruikt worden ter ondersteuning van de drie genoemde taken. Dit zijn: IMWA Kunsterken, OMS Waterprofiel (in ontwikkeling) voor metingen & observaties, IMWA Monitoring (in Ontwikkeling) voor monitoringsgegevens, IMWA Normen (in Ontwikkeling) en IMWA Maatregelen (in ontwikkeling).
-
-Ieder van deze genoemde onderdelen heeft een connectie met IMWA Basis. IMWA Basis is de fundering voor IMWA waar alles samenkomt.
-
-In de onderstaande afbeelding is een (voorlopige) weergave te zien van IMWA en de samenhang tussen de verschillende onderdelen binnen IMWA. **Let op!** Dit is nog niet de definitieve versie van IMWA en is onderheven aan veranderingen die tot stand komen door de verdere doorontwikkeling van IMWA.
-
-![De context van IMWA](./algemeen/Bedrijfsobjecten%20model.jpg)
-*Totaalplaat van IMWA in samenhang*
-
-Zie voor verdere toelichting van de samenhang tussen de verschillende domeinen in de IMWA bij IMWA Basis: [Catalogus IMWA Basis](https://aquo-standaard.github.io/IMWA-basis/#cat)
-
-## IMWA Watersysteem
+# IMWA Watersysteem
 
 Een watersteem kan op verschillende manieren worden bekeken afhankelijk van de interesse die een waterbeheerder heeft.  Hoe naar het watersysteem gekeken wordt, is afhankelijk van het thema en de uitdagingen die de waterbeheerder hierin tegenkomt. IMWA Watersysteem is één van de domeinen binnen IMWA, waarbinnen de verschillende manieren van beschouwen van een watersysteem gemodelleerd is. Voor het overzicht hebben wij watersysteem onderverdeeld in een aantal perspectieven die voor de waterbeheerder herkenbaar zijn. Een perspectief zet de objecten bij elkaar die van belang kunnen zijn voor dat perspectief. Deze perspectieven zijn enkel weergaven om het domein Watersysteem overzichtelijker te maken en geen strikte indelingen! Als er behoefte is om ook andere perspectieven en/of andere weergaven te maken dan is dit altijd mogelijk.
 
@@ -33,7 +16,7 @@ Toelichting aan de hand van het object oppervlaktewaterlichaam dat in alle persp
 - 'hydrologie': hoe is het oppervlaktewater verbonden met andere wateren?
 - 'juridisch': welke wetgeving is er van toepassing in het oppervlaktewater?
 
-### Modelleerbeslissingen
+## Modelleerbeslissingen
 
 Er zijn vaak meerdere opties om informatie te structureren in een informatiemodel. Hieronder een overzicht van de modelleerbeslissingen zoals we die voor IMWA Watersysteem hebben genomen.
 
@@ -61,7 +44,7 @@ Er zijn vaak meerdere opties om informatie te structureren in een informatiemode
 
 12. **Duin en hoge grond zijn toegevoegd** aan het diagram geografie als specialisaties van bodem.
 
-### Openstaande acties
+## Openstaande acties
 
 Naar aanleiding van de feedback op IMWA Watersysteem zijn er een aantal acties die in de toekomst ondernomen moeten worden. Deze acties moeten of met de waterbeheerders worden besproken of intern worden uitgewerkt.
 
