@@ -29,7 +29,7 @@ Er wordt een verschil gemaakt tussen *primitieve datatypen* complexe datatypen. 
 Naast deze datatypen kunnen attributen gekoppeld zijn aan een Aquo-domeintabel. Bij een attribuut moet dan een waarde uit de aangegeven Aquo-domeintabel worden aangegeven bijvoorbeeld, attribuut typeSluis verwijst naar de domeintabel SluisType waaruit de waarde keersluis kan worden gekozen.
 
 ## Gegevensgroepen
-Soms worden meerdere attributen gegroepeerd in een *gegevensgroep*. De attributen in zo’n groep horen inhoudelijk bij elkaar en worden als een geheel behandeld bijvoorbeeld, de gegevensgroep *afmetingen*, waarin de attributen *lengte*, *breedte* en *hoogte* zitten. Gegevensgroepen kunnen bij meerdere objecttypen tegelijk  worden gebruikt.
+Soms worden meerdere attributen gegroepeerd in een *gegevensgroep*. De attributen in zo’n groep horen inhoudelijk bij elkaar, omdat zij bijvoorbeeld slaan op hetzelfde object of gaan over hetzelfde onderwerp. Het kan hier gaan om een vast groepje attributen die samen uitgewisseld moeten worden bijvoorbeeld de gegevensgroep *afmetingen*, waarin de attributen *lengte*, *breedte* en *hoogte* zitten. Het kan bij een gegevensgroep ook gaan om attributen die wel inhoudelijk bij elkaar horen, maar niet zozeer samen uitgewisseld hoeven worden. In dit geval kan er gekozen kan worden om specifieke attributen uit te wisselen binnen deze gegevensgroep die van belang zijn voor een specifiek uitwisseldoel.
 
 ## Relaties
 
